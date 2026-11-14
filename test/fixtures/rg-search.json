@@ -1,0 +1,2015 @@
+{
+  "created": "2026-11-13T23:36:20.156Z",
+  "count": 24,
+  "offset": 0,
+  "release-groups": [
+    {
+      "id": "3252a908-706c-4ee8-923f-5f26c6016eb8",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 100,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 1,
+      "title": "Unravelling",
+      "first-release-date": "2025-06-20",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "6e0b44c1-05a1-4ce4-a5ad-fdbec50d33d0",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Unravelling",
+          "status": "Official"
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "alternative rock" },
+        { "count": 1, "name": "indie rock" }
+      ]
+    },
+    {
+      "id": "5a2d8b13-8064-44ff-b44b-a1ac104a1008",
+      "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+      "score": 100,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 1,
+      "title": "2000 Light Years From Home",
+      "first-release-date": "2025-06-01",
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "184f59d4-cb1f-40e3-93cb-2468956c6e72",
+          "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+          "title": "2000 Light Years From Home",
+          "status": "Bootleg"
+        }
+      ]
+    },
+    {
+      "id": "5985ee52-67d6-40ff-b1ce-38a4e8b4f6c5",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 100,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 1,
+      "title": "Be With You",
+      "first-release-date": "2026-03-19",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "79349ae3-b858-4e1a-8c6d-bd6223b997c7",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Be With You",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "b49f4b3b-6ec5-4198-a914-eb91f6c61119",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 100,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 1,
+      "title": "Unravelling (Ghost Town version)",
+      "first-release-date": "2025-08-08",
+      "primary-type": "Single",
+      "secondary-types": ["Remix"],
+      "secondary-type-ids": ["0c60f497-ff81-3818-befd-abfc84a4858b"],
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "c4916bb8-7267-46a8-9386-4037b2c50b50",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Unravelling (Ghost Town version)",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "10f23013-b6bf-4574-b816-3bfe318d0004",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 100,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 2,
+      "title": "Cryogen",
+      "first-release-date": "2026-04-24",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "8e61044e-6c34-40b6-8792-d5a0f11b4455",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Cryogen",
+          "status": "Official"
+        },
+        {
+          "id": "b71d7877-18df-4ffd-a81e-15b9682276b2",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Cryogen",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "c3cc77e9-8d92-4b11-990d-a0fe4c980c9a",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 100,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 2,
+      "title": "Hexagons",
+      "first-release-date": "2026-05-19",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "c86ff2c4-1693-4c1b-b1a5-5091c8a78ad6",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hexagons",
+          "status": "Official"
+        },
+        {
+          "id": "f94662fe-6375-48b0-9843-cfd13c072ba3",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hexagons",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "145b0a7d-af44-4007-bdf8-daff12160412",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 100,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 2,
+      "title": "Nightshift Superstar",
+      "first-release-date": "2026-06-05",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "370d1551-5693-4fec-8372-31cdb8243fa2",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Nightshift Superstar",
+          "status": "Official"
+        },
+        {
+          "id": "9d897cbb-fbeb-4156-8949-7e62a12ebae5",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Nightshift Superstar",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "bd42e8ea-09c9-41d5-a608-c2d611d1a705",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 100,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "fcbfd007-d5c1-4e24-b7b9-549990ccd7e7",
+      "count": 1,
+      "title": "Hush",
+      "first-release-date": "2026-06-25",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "joinphrase": " & ",
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ellie Goulding",
+          "artist": {
+            "id": "33ca19f4-18c8-4411-98df-ac23890ce9f5",
+            "name": "Ellie Goulding",
+            "sort-name": "Goulding, Ellie",
+            "aliases": [
+              {
+                "sort-name": "高登, 艾丽",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "艾丽·高登",
+                "locale": "zh_Hans",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Goulding, Elena Jane",
+                "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                "name": "Elena Jane Goulding",
+                "locale": null,
+                "type": "Legal name",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "bba804e7-d894-45d3-b90b-9d1fbfd74004",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hush",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "7dffeca3-420b-4095-abf4-f2e1ab61be35",
+      "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "score": 100,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 9,
+      "title": "The Wow! Signal",
+      "first-release-date": "2026-06-26",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "1ac9f2af-d034-49b7-9815-432f48d27eb7",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        },
+        {
+          "id": "14b6865d-850c-47a6-b41a-9c22ceecb0f9",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        },
+        {
+          "id": "d4454140-04a4-49af-8833-82a284616670",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        },
+        {
+          "id": "70517abc-0c35-47f5-b90a-529d3cfb0cde",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        },
+        {
+          "id": "1ce10e4c-63d1-40cc-b907-0a6f82d9af42",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        },
+        {
+          "id": "d44615ec-ee84-4ed3-acec-83b80db3459c",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        },
+        {
+          "id": "658d3667-70ad-4452-9b1a-c63d13730cde",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        },
+        {
+          "id": "eb4fe4ff-e679-41d3-b80d-dd29e73d84fb",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        },
+        {
+          "id": "66f96b82-4cf1-41a7-82b1-ee075a91952b",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Wow! Signal",
+          "status": "Official"
+        }
+      ],
+      "tags": [
+        { "count": 2, "name": "rock" },
+        { "count": 1, "name": "pop" },
+        { "count": 2, "name": "alternative rock" },
+        { "count": 1, "name": "progressive rock" },
+        { "count": 1, "name": "indie rock" },
+        { "count": 1, "name": "alternative" },
+        { "count": 1, "name": "pop rock" },
+        { "count": 1, "name": "space rock" },
+        { "count": 1, "name": "neo-progressive rock" },
+        { "count": 1, "name": "alternative/indie rock" },
+        { "count": 1, "name": "laut.de" },
+        { "count": 1, "name": "plattentests.de" },
+        { "count": 0, "name": "rollingstone.de" }
+      ]
+    },
+    {
+      "id": "47744615-97cb-450a-85e8-41168e870e10",
+      "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+      "score": 100,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "841fa710-5ff2-3f25-9cb4-ca0e2e25bea9",
+      "count": 1,
+      "title": "Live in London 2012 (BBC Radio Theatre)",
+      "first-release-date": "2025",
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "artist-credit": [
+        {
+          "name": "Muse",
+          "artist": {
+            "id": "9c9f1380-2516-4fc9-a3e6-f9f61941d090",
+            "name": "Muse",
+            "sort-name": "Muse",
+            "disambiguation": "UK rock band",
+            "aliases": [
+              {
+                "sort-name": "Rocket Baby Dolls",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Rocket Baby Dolls",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": "1996-01",
+                "end-date": "1998"
+              },
+              {
+                "sort-name": "Muse",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Muse",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ミューズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ミューズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "032ed8a0-95a9-4af7-ac6d-9e2765e00aed",
+          "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+          "title": "Live in London 2012 (BBC Radio Theatre)",
+          "status": "Bootleg"
+        }
+      ]
+    },
+    {
+      "id": "44419ec0-d44a-4ec5-875c-d08f5c7ec13c",
+      "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+      "score": 85,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "021661c1-84c5-30d7-9bb2-f0766affb734",
+      "count": 9,
+      "title": "Hail to the Thief: Live Recordings 2003–2009",
+      "first-release-date": "2025-08-13",
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "artist-credit": [
+        {
+          "name": "Radiohead",
+          "artist": {
+            "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+            "name": "Radiohead",
+            "sort-name": "Radiohead",
+            "aliases": [
+              {
+                "sort-name": "Radiohead",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Radiohead",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "r/head",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "r/head",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "电台司令",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "电台司令",
+                "locale": "zh",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "れでぃおへっど",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "レディオヘッド",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Radiohead & Thom Yorke",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "Radiohead & Thom Yorke",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Radio Head",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "Radio Head",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "22677763-ee61-4824-95c5-7b8c1d7cdd7c",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Official"
+        },
+        {
+          "id": "b8cb2e82-ff99-42e4-87ac-94dba32d2292",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Official"
+        },
+        {
+          "id": "e64ec284-09cb-453f-8034-6ac9afe84374",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Official"
+        },
+        {
+          "id": "b1bb40af-fb04-4d7c-a62b-c33b57add5c9",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Official"
+        },
+        {
+          "id": "ba6c5495-954f-4844-8c89-20c0eda91614",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Official"
+        },
+        {
+          "id": "3282c584-ff8f-4613-8611-75507fa2eba4",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Official"
+        },
+        {
+          "id": "1e4554cd-9782-4914-9f8a-7ceca94f7523",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Official"
+        },
+        {
+          "id": "b7b80db7-2d17-422d-9c55-f621166efd74",
+          "status-id": "6a3772de-4605-4132-993d-aa315cd19b4b",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Withdrawn"
+        },
+        {
+          "id": "0134244e-6e7d-43b0-b627-c54e89a7c6cb",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Hail to the Thief: Live Recordings 2003–2009",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "24d688b1-7c73-467f-8e1b-109d6cc8174b",
+      "type-id": "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+      "score": 85,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "021661c1-84c5-30d7-9bb2-f0766affb734",
+      "count": 1,
+      "title": "Transmission Impossible",
+      "first-release-date": "2025-08",
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "artist-credit": [
+        {
+          "name": "Radiohead",
+          "artist": {
+            "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+            "name": "Radiohead",
+            "sort-name": "Radiohead",
+            "aliases": [
+              {
+                "sort-name": "Radiohead",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Radiohead",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "r/head",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "r/head",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "电台司令",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "电台司令",
+                "locale": "zh",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "れでぃおへっど",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "レディオヘッド",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Radiohead & Thom Yorke",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "Radiohead & Thom Yorke",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Radio Head",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "Radio Head",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "1b43abcd-4ce4-4e9b-ad84-dc0f3e5de4f2",
+          "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+          "title": "Transmission Impossible",
+          "status": "Bootleg"
+        }
+      ]
+    },
+    {
+      "id": "96a87d03-c9cc-4db7-ad93-44311ef0c3a8",
+      "type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+      "score": 85,
+      "primary-type-id": "4fc3be2b-de1e-396b-a933-beb8f1607a22",
+      "artist-credit-id": "021661c1-84c5-30d7-9bb2-f0766affb734",
+      "count": 1,
+      "title": "The Bends B-Sides",
+      "first-release-date": "2025-03-17",
+      "primary-type": "Other",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "artist-credit": [
+        {
+          "name": "Radiohead",
+          "artist": {
+            "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+            "name": "Radiohead",
+            "sort-name": "Radiohead",
+            "aliases": [
+              {
+                "sort-name": "Radiohead",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Radiohead",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "r/head",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "r/head",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "电台司令",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "电台司令",
+                "locale": "zh",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "れでぃおへっど",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "レディオヘッド",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Radiohead & Thom Yorke",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "Radiohead & Thom Yorke",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Radio Head",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "Radio Head",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "2208ce5e-4c9e-48ed-8694-864f607b4704",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "The Bends B-Sides",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "a9b42c60-9d7f-4cc5-97e9-a2d05dfdcc17",
+      "type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+      "score": 85,
+      "primary-type-id": "3b2e49e1-2875-37b8-9fa9-1f7cf3f49900",
+      "artist-credit-id": "021661c1-84c5-30d7-9bb2-f0766affb734",
+      "count": 1,
+      "title": "Big Day Out",
+      "first-release-date": "2025-10-17",
+      "primary-type": "Broadcast",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "artist-credit": [
+        {
+          "name": "Radiohead",
+          "artist": {
+            "id": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+            "name": "Radiohead",
+            "sort-name": "Radiohead",
+            "aliases": [
+              {
+                "sort-name": "Radiohead",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "Radiohead",
+                "locale": "en",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "r/head",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "r/head",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "电台司令",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "电台司令",
+                "locale": "zh",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "れでぃおへっど",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "レディオヘッド",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Radiohead & Thom Yorke",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "Radiohead & Thom Yorke",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Radio Head",
+                "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                "name": "Radio Head",
+                "locale": null,
+                "type": "Search hint",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "d032ee09-a4d7-46e5-812a-0d2a73c8a175",
+          "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+          "title": "Big Day Out",
+          "status": "Bootleg"
+        }
+      ]
+    },
+    {
+      "id": "a061d393-bcfa-4d8c-b45e-c174c6900957",
+      "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+      "score": 81,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "df296871-15ee-38e4-a1da-421cc5801c7e",
+      "count": 1,
+      "title": "Black and Blue: Live at L’Abattoir",
+      "first-release-date": "2025-11-14",
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "174f453c-977c-42ce-9bb4-e92d162200d8",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Black and Blue: Live at L’Abattoir",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "9a1d2e3e-5636-4b5d-bd73-1957e147de13",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 81,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "5f120a43-3556-4afb-9497-c4f5ca7a0e5d",
+      "count": 1,
+      "title": "Satisfaction Skank (High Contrast remix)",
+      "first-release-date": "2026-01-30",
+      "primary-type": "Single",
+      "secondary-types": ["Remix"],
+      "secondary-type-ids": ["0c60f497-ff81-3818-befd-abfc84a4858b"],
+      "artist-credit": [
+        {
+          "joinphrase": ", ",
+          "name": "Fatboy Slim",
+          "artist": {
+            "id": "34c63966-445c-4613-afe1-4f0e1e53ae9a",
+            "name": "Fatboy Slim",
+            "sort-name": "Fatboy Slim",
+            "aliases": [
+              {
+                "sort-name": "ファットボーイ・スリム",
+                "name": "ファットボーイ・スリム",
+                "locale": "ja",
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Fatboy Slin",
+                "name": "Fatboy Slin",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Fat Boy Slim",
+                "name": "Fat Boy Slim",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        },
+        {
+          "joinphrase": " & ",
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        },
+        {
+          "name": "High Contrast",
+          "artist": {
+            "id": "889b69e3-7b18-4889-b953-9f2931597204",
+            "name": "High Contrast",
+            "sort-name": "High Contrast",
+            "aliases": [
+              {
+                "sort-name": "Barrett, Lincoln J.",
+                "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+                "name": "Lincoln J. Barrett",
+                "locale": null,
+                "type": "Legal name",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "The Contrast",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "The Contrast",
+                "locale": null,
+                "type": "Artist name",
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "b6e06103-0cf0-4b6a-a8a0-38b0e7643982",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Satisfaction Skank (High Contrast remix)",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "cef92305-ab05-4f22-86b7-74f7c65b9341",
+      "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "score": 81,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "df296871-15ee-38e4-a1da-421cc5801c7e",
+      "count": 1,
+      "title": "BBC Sessions 1963–1971",
+      "first-release-date": "2025-05-04",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "19e7989d-b9d0-449d-aec6-be9d750c6cb8",
+          "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+          "title": "BBC Sessions 1963–1971",
+          "status": "Bootleg"
+        }
+      ]
+    },
+    {
+      "id": "1d96710c-2c99-4c46-8ddb-ba134463de8f",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 81,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "df296871-15ee-38e4-a1da-421cc5801c7e",
+      "count": 1,
+      "title": "Shame, Shame, Shame",
+      "first-release-date": "2025-09-24",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "092a5297-ec0d-4737-848b-7b6a4578ead4",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Shame, Shame, Shame",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "6a135528-d526-402e-9b75-64a7caab46b3",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 81,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "df296871-15ee-38e4-a1da-421cc5801c7e",
+      "count": 2,
+      "title": "In the Stars",
+      "first-release-date": "2026-05-05",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "fd2e16ea-283f-4b5f-9204-8a4b162a01fa",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "In the Stars",
+          "status": "Official"
+        },
+        {
+          "id": "a764db2f-c4bf-4aae-966b-057d2c6eed83",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "In the Stars",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "82a7c7b3-f6bd-49b4-8758-680cf5be3c60",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 81,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "df296871-15ee-38e4-a1da-421cc5801c7e",
+      "count": 1,
+      "title": "Jealous Lover",
+      "first-release-date": "2026-06-25",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "80f47ff1-6cee-48a3-807a-37b66573510e",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Jealous Lover",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "d49c3a59-64cf-4586-9ace-9a71a47e64ad",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 81,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "df296871-15ee-38e4-a1da-421cc5801c7e",
+      "count": 1,
+      "title": "Mr Charm",
+      "first-release-date": "2026-10-01",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "3292b7cf-9766-43d5-9eeb-66f3405dec6f",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Mr Charm",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "ff1fe0b2-08e6-4c39-95e7-fcf5fb6b34cc",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 81,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "df296871-15ee-38e4-a1da-421cc5801c7e",
+      "count": 1,
+      "title": "Who You Callin' Crazy",
+      "first-release-date": "2026-10-20",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "87869429-d531-42c0-9dcf-b4378e0a7b67",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Who You Callin' Crazy",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "4dc69c57-2381-49ca-a1c5-c64c3ae3cabd",
+      "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "score": 81,
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "artist-credit-id": "babf4563-2ea0-42e3-b3b8-c3059b70c0da",
+      "count": 1,
+      "title": "Zydeco Sont Pas Salés",
+      "first-release-date": "2025-06-25",
+      "primary-type": "Single",
+      "artist-credit": [
+        {
+          "joinphrase": " & ",
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        },
+        {
+          "name": "Steve Riley",
+          "artist": {
+            "id": "ca692198-eae1-4202-9650-7f91e23c995b",
+            "name": "Steve Riley",
+            "sort-name": "Riley, Steve",
+            "disambiguation": "US cajun singer/accordionist"
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "2ca95889-e9d3-4220-8d78-da71d824f96c",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Zydeco Sont Pas Salés",
+          "status": "Official"
+        }
+      ]
+    },
+    {
+      "id": "f7356dbc-c12d-4391-b804-cc4d8ff7c5be",
+      "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "score": 81,
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "artist-credit-id": "df296871-15ee-38e4-a1da-421cc5801c7e",
+      "count": 12,
+      "title": "Foreign Tongues, Loose Lips",
+      "first-release-date": "2026-07-10",
+      "primary-type": "Album",
+      "artist-credit": [
+        {
+          "name": "The Rolling Stones",
+          "artist": {
+            "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+            "name": "The Rolling Stones",
+            "sort-name": "Rolling Stones, The",
+            "aliases": [
+              {
+                "sort-name": "Stones",
+                "name": "Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Stones, The",
+                "name": "The Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "ローリング・ストーンズ",
+                "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                "name": "ローリング・ストーンズ",
+                "locale": "ja",
+                "type": "Artist name",
+                "primary": true,
+                "begin-date": null,
+                "end-date": null
+              },
+              {
+                "sort-name": "Rolling Stones",
+                "name": "Rolling Stones",
+                "locale": null,
+                "type": null,
+                "primary": null,
+                "begin-date": null,
+                "end-date": null
+              }
+            ]
+          }
+        }
+      ],
+      "releases": [
+        {
+          "id": "1eeec159-2c41-48b5-a35d-68f4513d79ea",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues, Loose Lips",
+          "status": "Official"
+        },
+        {
+          "id": "ab451db7-870f-4234-bd3e-251e5b34acf0",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues, Loose Lips",
+          "status": "Official"
+        },
+        {
+          "id": "05b54eff-5def-4f26-81c1-28fa42a733c1",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        },
+        {
+          "id": "aee555f2-3a79-4095-ab4d-ce955f88e715",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        },
+        {
+          "id": "2b39da11-af90-4e44-a179-4545a59b3212",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        },
+        {
+          "id": "8732e956-dbad-43fc-959c-5656bfbb1a81",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        },
+        {
+          "id": "64a59822-c47d-4b05-960a-40d8d28cab6f",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        },
+        {
+          "id": "dd8cf069-cfa1-4fa6-9913-4f9ff606a9f5",
+          "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+          "title": "Foreign Tongues",
+          "status": "Bootleg"
+        },
+        {
+          "id": "3310f7e0-ff7a-45c2-8afa-01aa8a1ef731",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        },
+        {
+          "id": "7d5d8a13-4cf3-409f-9e50-ce5dc3215cd9",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        },
+        {
+          "id": "59cb9b23-b883-4ff2-a940-93da6addccb6",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        },
+        {
+          "id": "58a6be50-a267-4f97-8406-57020f7a13fa",
+          "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+          "title": "Foreign Tongues",
+          "status": "Official"
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "blues rock" },
+        { "count": 0, "name": "offizielle charts" },
+        { "count": 0, "name": "laut.de" },
+        { "count": 0, "name": "plattentests.de" },
+        { "count": 0, "name": "5+ wochen" },
+        { "count": 0, "name": "musikexpress.de" },
+        { "count": 1, "name": "rollingstone.de" }
+      ]
+    }
+  ]
+}

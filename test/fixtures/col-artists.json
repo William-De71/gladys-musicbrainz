@@ -1,0 +1,124 @@
+{
+  "artist-count": 288,
+  "artists": [
+    {
+      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+      "disambiguation": "Estonian composer",
+      "ipis": [],
+      "begin-area": {
+        "type-id": null,
+        "disambiguation": "",
+        "name": "Makiivka",
+        "type": null,
+        "id": "5e4eac87-4d8e-49ab-a83f-91ede8789a3c",
+        "sort-name": "Makiivka"
+      },
+      "id": "44a9a8d8-8cf8-454a-a8bc-2ab06e428657",
+      "life-span": { "ended": true, "begin": "1917-03-30", "end": "1995-06-14" },
+      "gender": "Female",
+      "name": "Els Aarne",
+      "end-area": {
+        "name": "Tallinn",
+        "disambiguation": "",
+        "type-id": null,
+        "sort-name": "Tallinn",
+        "id": "883b7693-6382-4252-88f1-097718bf7e9c",
+        "type": null
+      },
+      "isnis": ["000000003176811X"],
+      "type": "Person",
+      "country": "EE",
+      "gender-id": "93452b5a-a947-30c8-934f-6a4056b151c2",
+      "sort-name": "Aarne, Els",
+      "area": {
+        "type": null,
+        "sort-name": "Estonia",
+        "iso-3166-1-codes": ["EE"],
+        "id": "e1c1215f-dcc0-35b4-b840-d2ca2151593b",
+        "type-id": null,
+        "name": "Estonia",
+        "disambiguation": ""
+      }
+    },
+    {
+      "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+      "end-area": {
+        "id": "1127ddc2-eab3-4662-8718-6adbdeea3b10",
+        "sort-name": "Stockholm",
+        "type": null,
+        "disambiguation": "",
+        "name": "Stockholm",
+        "type-id": null
+      },
+      "type": "Person",
+      "country": "EE",
+      "isnis": ["0000000121190593"],
+      "area": {
+        "type": null,
+        "sort-name": "Estonia",
+        "iso-3166-1-codes": ["EE"],
+        "id": "e1c1215f-dcc0-35b4-b840-d2ca2151593b",
+        "type-id": null,
+        "name": "Estonia",
+        "disambiguation": ""
+      },
+      "sort-name": "Aavik, Juhan",
+      "gender": "Male",
+      "name": "Juhan Aavik",
+      "begin-area": {
+        "type": null,
+        "sort-name": "Viljandimaa",
+        "iso-3166-2-codes": ["EE-84"],
+        "id": "e54b4028-d809-4fb8-adf1-73aa8791071f",
+        "type-id": null,
+        "disambiguation": "",
+        "name": "Viljandimaa"
+      },
+      "ipis": [],
+      "id": "7c227112-2e59-4889-bbae-9c008dd9d0ec",
+      "life-span": { "end": "1982-11-26", "ended": true, "begin": "1884-01-29" },
+      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+      "disambiguation": "Estonian composer"
+    },
+    {
+      "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+      "disambiguation": "Estonian composer",
+      "begin-area": {
+        "type-id": null,
+        "disambiguation": "",
+        "name": "Tallinn",
+        "type": null,
+        "id": "883b7693-6382-4252-88f1-097718bf7e9c",
+        "sort-name": "Tallinn"
+      },
+      "ipis": [],
+      "id": "888b8e0c-b627-4da9-a03e-75781761d7a8",
+      "life-span": { "end": "1939-03-21", "begin": "1900-02-22", "ended": true },
+      "gender": "Male",
+      "name": "Evald Aav",
+      "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+      "end-area": {
+        "type-id": null,
+        "disambiguation": "",
+        "name": "Tallinn",
+        "type": null,
+        "sort-name": "Tallinn",
+        "id": "883b7693-6382-4252-88f1-097718bf7e9c"
+      },
+      "type": "Person",
+      "isnis": ["0000000077823292"],
+      "country": "EE",
+      "area": {
+        "name": "Estonia",
+        "disambiguation": "",
+        "type-id": null,
+        "iso-3166-1-codes": ["EE"],
+        "sort-name": "Estonia",
+        "id": "e1c1215f-dcc0-35b4-b840-d2ca2151593b",
+        "type": null
+      },
+      "sort-name": "Aav, Evald"
+    }
+  ],
+  "artist-offset": 0
+}

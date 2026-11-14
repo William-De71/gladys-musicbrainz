@@ -1,0 +1,2488 @@
+{
+  "manifest_version": 1,
+  "type": "calendar",
+  "name": "MusicBrainz",
+  "description": {
+    "en": "New releases of the artists you follow: calendar, reminders, covers and widgets.",
+    "fr": "Les sorties des artistes que vous suivez : calendrier, rappels, pochettes et widgets.",
+    "de": "Neuerscheinungen Ihrer Künstler: Kalender, Erinnerungen, Cover und Widgets.",
+    "es": "Lanzamientos de los artistas que sigue: calendario, avisos, portadas y widgets."
+  },
+  "version": "0.1.0",
+  "docker_image": "ghcr.io/william-de71/gladys-musicbrainz:0.1.0",
+  "gladys_version": ">=5.3.0",
+  "categories": ["multimedia", "leisure"],
+  "keywords": [
+    "music",
+    "musique",
+    "album",
+    "new releases",
+    "sorties",
+    "vinyl",
+    "ListenBrainz",
+    "Last.fm",
+    "Cover Art Archive",
+    "MetaBrainz"
+  ],
+  "cover_image": "https://raw.githubusercontent.com/William-De71/gladys-musicbrainz/main/cover.jpg",
+  "transports": ["cloud"],
+  "config_schema": [
+    {
+      "key": "intro",
+      "type": "section",
+      "label": {
+        "en": "How it works",
+        "fr": "Comment ça marche",
+        "de": "So funktioniert es",
+        "es": "Cómo funciona"
+      },
+      "description": {
+        "en": "1. Say which artists to follow: the “Follow an artist” button below (a name is enough), and/or one of the sources further down (a MusicBrainz collection, your ListenBrainz or Last.fm profile).\n2. Enable the integration in “My calendars” below: you get a “Music releases” calendar.\n3. Add the widgets to a dashboard and use the scene triggers (release announced, release day, date changed).\nThe releases come from MusicBrainz, the open music encyclopedia: no account, no key. Only the identifiers of the followed artists are sent to it.",
+        "fr": "1. Indiquez les artistes à suivre : le bouton « Suivre un artiste » ci-dessous (un nom suffit), et/ou l’une des sources plus bas (une collection MusicBrainz, votre profil ListenBrainz ou Last.fm).\n2. Activez l’intégration dans « Mes calendriers » ci-dessous : vous obtenez un calendrier « Sorties musicales ».\n3. Ajoutez les widgets à un tableau de bord et utilisez les déclencheurs de scène (sortie annoncée, jour de sortie, date modifiée).\nLes sorties viennent de MusicBrainz, l’encyclopédie libre de la musique : ni compte ni clé. Seuls les identifiants des artistes suivis lui sont envoyés.",
+        "de": "1. Geben Sie an, welchen Künstlern Sie folgen: die Schaltfläche „Einem Künstler folgen“ unten (ein Name genügt) und/oder eine der Quellen weiter unten (eine MusicBrainz-Sammlung, Ihr ListenBrainz- oder Last.fm-Profil).\n2. Aktivieren Sie die Integration unten in „Meine Kalender“: Sie erhalten den Kalender „Musik-Neuerscheinungen“.\n3. Fügen Sie die Widgets einem Dashboard hinzu und nutzen Sie die Szenen-Auslöser (Veröffentlichung angekündigt, Erscheinungstag, Datum geändert).\nDie Daten stammen von MusicBrainz, der offenen Musik-Enzyklopädie: kein Konto, kein Schlüssel. Nur die Kennungen der verfolgten Künstler werden dorthin gesendet.",
+        "es": "1. Indique los artistas que quiere seguir: el botón «Seguir a un artista» más abajo (basta un nombre) y/o una de las fuentes siguientes (una colección de MusicBrainz, su perfil de ListenBrainz o de Last.fm).\n2. Active la integración en «Mis calendarios» más abajo: obtendrá un calendario «Lanzamientos musicales».\n3. Añada los widgets a un panel y use los disparadores de escena (lanzamiento anunciado, día de lanzamiento, fecha modificada).\nLos lanzamientos proceden de MusicBrainz, la enciclopedia libre de la música: sin cuenta ni clave. Solo se le envían los identificadores de los artistas seguidos."
+      },
+      "links": [
+        {
+          "url": "https://musicbrainz.org",
+          "label": {
+            "en": "MusicBrainz",
+            "fr": "MusicBrainz",
+            "de": "MusicBrainz",
+            "es": "MusicBrainz"
+          }
+        },
+        {
+          "url": "https://github.com/William-De71/gladys-musicbrainz/blob/main/docs/en.md",
+          "label": {
+            "en": "Documentation",
+            "fr": "Documentation (anglais)",
+            "de": "Dokumentation (Englisch)",
+            "es": "Documentación (inglés)"
+          }
+        },
+        {
+          "url": "https://github.com/William-De71/gladys-musicbrainz/blob/main/docs/fr.md",
+          "label": {
+            "en": "Documentation (French)",
+            "fr": "Documentation",
+            "de": "Dokumentation (Französisch)",
+            "es": "Documentación (francés)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "kinds",
+      "type": "multi_select",
+      "required": true,
+      "label": {
+        "en": "Kinds of releases",
+        "fr": "Types de sorties",
+        "de": "Arten von Veröffentlichungen",
+        "es": "Tipos de lanzamientos"
+      },
+      "description": {
+        "en": "The calendar, the widgets and the scenes only see these. Bootlegs are always left out.",
+        "fr": "Le calendrier, les widgets et les scènes ne voient que ceux-ci. Les bootlegs sont toujours écartés.",
+        "de": "Kalender, Widgets und Szenen sehen nur diese. Bootlegs werden immer ausgelassen.",
+        "es": "El calendario, los widgets y las escenas solo ven estos. Los bootlegs siempre se descartan."
+      },
+      "options": [
+        {
+          "value": "album",
+          "label": {
+            "en": "Albums",
+            "fr": "Albums",
+            "de": "Alben",
+            "es": "Álbumes"
+          }
+        },
+        {
+          "value": "ep",
+          "label": {
+            "en": "EPs",
+            "fr": "EP",
+            "de": "EPs",
+            "es": "EP"
+          }
+        },
+        {
+          "value": "single",
+          "label": {
+            "en": "Singles",
+            "fr": "Singles",
+            "de": "Singles",
+            "es": "Sencillos"
+          }
+        },
+        {
+          "value": "live",
+          "label": {
+            "en": "Live albums",
+            "fr": "Albums live",
+            "de": "Live-Alben",
+            "es": "Álbumes en directo"
+          }
+        },
+        {
+          "value": "compilation",
+          "label": {
+            "en": "Compilations",
+            "fr": "Compilations",
+            "de": "Compilations",
+            "es": "Recopilatorios"
+          }
+        },
+        {
+          "value": "other",
+          "label": {
+            "en": "Others (soundtracks, remixes, demos…)",
+            "fr": "Autres (bandes originales, remix, démos…)",
+            "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+            "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+          }
+        }
+      ],
+      "default": ["album", "ep"]
+    },
+    {
+      "key": "sources",
+      "type": "section",
+      "label": {
+        "en": "Other sources of artists (optional)",
+        "fr": "Autres sources d’artistes (facultatif)",
+        "de": "Weitere Künstlerquellen (optional)",
+        "es": "Otras fuentes de artistas (opcional)"
+      },
+      "description": {
+        "en": "These lists add up with the artists of the “Follow an artist” button and are read again once a day. 300 artists at most in all.",
+        "fr": "Ces listes s’ajoutent aux artistes du bouton « Suivre un artiste » et sont relues une fois par jour. 300 artistes au maximum en tout.",
+        "de": "Diese Listen kommen zu den Künstlern der Schaltfläche „Einem Künstler folgen“ hinzu und werden einmal täglich neu gelesen. Insgesamt höchstens 300 Künstler.",
+        "es": "Estas listas se suman a los artistas del botón «Seguir a un artista» y se vuelven a leer una vez al día. 300 artistas como máximo en total."
+      },
+      "links": [
+        {
+          "url": "https://musicbrainz.org/doc/Collections",
+          "label": {
+            "en": "MusicBrainz collections",
+            "fr": "Collections MusicBrainz",
+            "de": "MusicBrainz-Sammlungen",
+            "es": "Colecciones de MusicBrainz"
+          }
+        },
+        {
+          "url": "https://www.last.fm/api/account/create",
+          "label": {
+            "en": "Create a Last.fm API key",
+            "fr": "Créer une clé d’API Last.fm",
+            "de": "Last.fm-API-Schlüssel erstellen",
+            "es": "Crear una clave de API de Last.fm"
+          }
+        }
+      ]
+    },
+    {
+      "key": "collection",
+      "type": "string",
+      "label": {
+        "en": "MusicBrainz collection",
+        "fr": "Collection MusicBrainz",
+        "de": "MusicBrainz-Sammlung",
+        "es": "Colección de MusicBrainz"
+      },
+      "description": {
+        "en": "Address of a public collection of artists of your MusicBrainz account: every artist in it is followed.",
+        "fr": "Adresse d’une collection publique d’artistes de votre compte MusicBrainz : tous ses artistes sont suivis.",
+        "de": "Adresse einer öffentlichen Künstlersammlung Ihres MusicBrainz-Kontos: Alle ihre Künstler werden verfolgt.",
+        "es": "Dirección de una colección pública de artistas de su cuenta de MusicBrainz: se siguen todos sus artistas."
+      },
+      "placeholder": {
+        "en": "https://musicbrainz.org/collection/…",
+        "fr": "https://musicbrainz.org/collection/…",
+        "de": "https://musicbrainz.org/collection/…",
+        "es": "https://musicbrainz.org/collection/…"
+      }
+    },
+    {
+      "key": "listenbrainz_user",
+      "type": "string",
+      "label": {
+        "en": "ListenBrainz user name",
+        "fr": "Nom d’utilisateur ListenBrainz",
+        "de": "ListenBrainz-Benutzername",
+        "es": "Usuario de ListenBrainz"
+      },
+      "description": {
+        "en": "Follows your most listened artists (public statistics, no key).",
+        "fr": "Suit vos artistes les plus écoutés (statistiques publiques, sans clé).",
+        "de": "Folgt Ihren meistgehörten Künstlern (öffentliche Statistiken, kein Schlüssel).",
+        "es": "Sigue a sus artistas más escuchados (estadísticas públicas, sin clave)."
+      },
+      "placeholder": {
+        "en": "rob",
+        "fr": "rob",
+        "de": "rob",
+        "es": "rob"
+      }
+    },
+    {
+      "key": "lastfm_user",
+      "type": "string",
+      "label": {
+        "en": "Last.fm user name",
+        "fr": "Nom d’utilisateur Last.fm",
+        "de": "Last.fm-Benutzername",
+        "es": "Usuario de Last.fm"
+      },
+      "description": {
+        "en": "Follows your most listened artists. Needs the API key below.",
+        "fr": "Suit vos artistes les plus écoutés. Nécessite la clé d’API ci-dessous.",
+        "de": "Folgt Ihren meistgehörten Künstlern. Benötigt den API-Schlüssel unten.",
+        "es": "Sigue a sus artistas más escuchados. Requiere la clave de API de abajo."
+      },
+      "placeholder": {
+        "en": "rj",
+        "fr": "rj",
+        "de": "rj",
+        "es": "rj"
+      }
+    },
+    {
+      "key": "lastfm_api_key",
+      "type": "secret",
+      "label": {
+        "en": "Last.fm API key",
+        "fr": "Clé d’API Last.fm",
+        "de": "Last.fm-API-Schlüssel",
+        "es": "Clave de API de Last.fm"
+      },
+      "description": {
+        "en": "Free, created in a minute on last.fm/api (link above). Only sent to Last.fm.",
+        "fr": "Gratuite, créée en une minute sur last.fm/api (lien ci-dessus). Envoyée uniquement à Last.fm.",
+        "de": "Kostenlos, in einer Minute auf last.fm/api erstellt (Link oben). Wird nur an Last.fm gesendet.",
+        "es": "Gratuita, se crea en un minuto en last.fm/api (enlace arriba). Solo se envía a Last.fm."
+      }
+    },
+    {
+      "key": "top_count",
+      "type": "select",
+      "label": {
+        "en": "Most listened artists followed",
+        "fr": "Artistes les plus écoutés suivis",
+        "de": "Verfolgte meistgehörte Künstler",
+        "es": "Artistas más escuchados seguidos"
+      },
+      "description": {
+        "en": "For ListenBrainz and Last.fm.",
+        "fr": "Pour ListenBrainz et Last.fm.",
+        "de": "Für ListenBrainz und Last.fm.",
+        "es": "Para ListenBrainz y Last.fm."
+      },
+      "options": [
+        {
+          "value": "10",
+          "label": {
+            "en": "10",
+            "fr": "10",
+            "de": "10",
+            "es": "10"
+          }
+        },
+        {
+          "value": "20",
+          "label": {
+            "en": "20",
+            "fr": "20",
+            "de": "20",
+            "es": "20"
+          }
+        },
+        {
+          "value": "30",
+          "label": {
+            "en": "30",
+            "fr": "30",
+            "de": "30",
+            "es": "30"
+          }
+        },
+        {
+          "value": "50",
+          "label": {
+            "en": "50",
+            "fr": "50",
+            "de": "50",
+            "es": "50"
+          }
+        }
+      ],
+      "default": "20"
+    },
+    {
+      "key": "top_period",
+      "type": "select",
+      "label": {
+        "en": "Listening period",
+        "fr": "Période d’écoute",
+        "de": "Hörzeitraum",
+        "es": "Periodo de escucha"
+      },
+      "description": {
+        "en": "Last.fm: the last 12 months. ListenBrainz: the current year (the previous one until the end of February).",
+        "fr": "Last.fm : les 12 derniers mois. ListenBrainz : l’année en cours (la précédente jusqu’à fin février).",
+        "de": "Last.fm: die letzten 12 Monate. ListenBrainz: das laufende Jahr (bis Ende Februar das vorige).",
+        "es": "Last.fm: los últimos 12 meses. ListenBrainz: el año en curso (el anterior hasta finales de febrero)."
+      },
+      "options": [
+        {
+          "value": "year",
+          "label": {
+            "en": "The year",
+            "fr": "L’année",
+            "de": "Das Jahr",
+            "es": "El año"
+          }
+        },
+        {
+          "value": "all_time",
+          "label": {
+            "en": "Since the beginning",
+            "fr": "Depuis le début",
+            "de": "Seit Beginn",
+            "es": "Desde el principio"
+          }
+        }
+      ],
+      "default": "year"
+    },
+    {
+      "key": "options",
+      "type": "section",
+      "label": {
+        "en": "Reading and scenes",
+        "fr": "Lecture et scènes",
+        "de": "Lesen und Szenen",
+        "es": "Lectura y escenas"
+      },
+      "description": {
+        "en": "MusicBrainz is a free service kept by a foundation: the integration reads it gently, one request per second at most.",
+        "fr": "MusicBrainz est un service gratuit tenu par une fondation : l’intégration le lit avec ménagement, une requête par seconde au plus.",
+        "de": "MusicBrainz ist ein kostenloser Dienst einer Stiftung: Die Integration liest ihn schonend, höchstens eine Anfrage pro Sekunde.",
+        "es": "MusicBrainz es un servicio gratuito mantenido por una fundación: la integración lo lee con cuidado, una petición por segundo como máximo."
+      }
+    },
+    {
+      "key": "interval_hours",
+      "type": "select",
+      "label": {
+        "en": "Reading of MusicBrainz",
+        "fr": "Lecture de MusicBrainz",
+        "de": "Lesen von MusicBrainz",
+        "es": "Lectura de MusicBrainz"
+      },
+      "options": [
+        {
+          "value": "3",
+          "label": {
+            "en": "Every 3 hours",
+            "fr": "Toutes les 3 heures",
+            "de": "Alle 3 Stunden",
+            "es": "Cada 3 horas"
+          }
+        },
+        {
+          "value": "6",
+          "label": {
+            "en": "Every 6 hours",
+            "fr": "Toutes les 6 heures",
+            "de": "Alle 6 Stunden",
+            "es": "Cada 6 horas"
+          }
+        },
+        {
+          "value": "12",
+          "label": {
+            "en": "Every 12 hours",
+            "fr": "Toutes les 12 heures",
+            "de": "Alle 12 Stunden",
+            "es": "Cada 12 horas"
+          }
+        },
+        {
+          "value": "24",
+          "label": {
+            "en": "Every 24 hours",
+            "fr": "Toutes les 24 heures",
+            "de": "Alle 24 Stunden",
+            "es": "Cada 24 horas"
+          }
+        }
+      ],
+      "default": "6"
+    },
+    {
+      "key": "notify_hour",
+      "type": "number",
+      "min": 0,
+      "max": 23,
+      "default": 9,
+      "label": {
+        "en": "Hour of the “release day” trigger",
+        "fr": "Heure du déclencheur « jour de sortie »",
+        "de": "Stunde des Auslösers „Erscheinungstag“",
+        "es": "Hora del disparador «día de lanzamiento»"
+      },
+      "description": {
+        "en": "From 0 to 23, local time: the scenes run at that hour on the day (or the day before, or a week before).",
+        "fr": "De 0 à 23, heure locale : les scènes se lancent à cette heure le jour même (ou la veille, ou une semaine avant).",
+        "de": "Von 0 bis 23, Ortszeit: Die Szenen starten zu dieser Stunde am Tag selbst (oder am Vortag oder eine Woche vorher).",
+        "es": "De 0 a 23, hora local: las escenas se ejecutan a esa hora el mismo día (o la víspera, o una semana antes)."
+      },
+      "placeholder": {
+        "en": "9",
+        "fr": "9",
+        "de": "9",
+        "es": "9"
+      }
+    },
+    {
+      "key": "language",
+      "type": "select",
+      "label": {
+        "en": "Language of the scene texts",
+        "fr": "Langue des textes des scènes",
+        "de": "Sprache der Szenentexte",
+        "es": "Idioma de los textos de las escenas"
+      },
+      "description": {
+        "en": "For the ready-made sentences of the scenes and the messages of the buttons. Automatic: the language of the dashboard.",
+        "fr": "Pour les phrases toutes faites des scènes et les messages des boutons. Automatique : la langue du tableau de bord.",
+        "de": "Für die fertigen Sätze der Szenen und die Meldungen der Schaltflächen. Automatisch: die Sprache des Dashboards.",
+        "es": "Para las frases hechas de las escenas y los mensajes de los botones. Automático: el idioma del panel."
+      },
+      "options": [
+        {
+          "value": "auto",
+          "label": {
+            "en": "Automatic",
+            "fr": "Automatique",
+            "de": "Automatisch",
+            "es": "Automático"
+          }
+        },
+        {
+          "value": "en",
+          "label": {
+            "en": "English",
+            "fr": "Anglais",
+            "de": "Englisch",
+            "es": "Inglés"
+          }
+        },
+        {
+          "value": "fr",
+          "label": {
+            "en": "French",
+            "fr": "Français",
+            "de": "Französisch",
+            "es": "Francés"
+          }
+        },
+        {
+          "value": "de",
+          "label": {
+            "en": "German",
+            "fr": "Allemand",
+            "de": "Deutsch",
+            "es": "Alemán"
+          }
+        },
+        {
+          "value": "es",
+          "label": {
+            "en": "Spanish",
+            "fr": "Espagnol",
+            "de": "Spanisch",
+            "es": "Español"
+          }
+        }
+      ],
+      "default": "auto"
+    }
+  ],
+  "actions": [
+    {
+      "key": "follow_artist",
+      "timeout_seconds": 60,
+      "label": {
+        "en": "Follow an artist",
+        "fr": "Suivre un artiste",
+        "de": "Einem Künstler folgen",
+        "es": "Seguir a un artista"
+      },
+      "description": {
+        "en": "Type a name: the integration finds the artist on MusicBrainz. For a namesake, paste the address of the artist page instead.",
+        "fr": "Saisissez un nom : l’intégration trouve l’artiste sur MusicBrainz. Pour un homonyme, collez plutôt l’adresse de la page de l’artiste.",
+        "de": "Geben Sie einen Namen ein: Die Integration findet den Künstler auf MusicBrainz. Bei Namensvettern fügen Sie stattdessen die Adresse der Künstlerseite ein.",
+        "es": "Escriba un nombre: la integración encuentra al artista en MusicBrainz. Para un homónimo, pegue mejor la dirección de la página del artista."
+      },
+      "fields": [
+        {
+          "key": "artist",
+          "type": "string",
+          "required": true,
+          "label": {
+            "en": "Artist",
+            "fr": "Artiste",
+            "de": "Künstler",
+            "es": "Artista"
+          },
+          "description": {
+            "en": "A name, or the address (or identifier) of the artist page on musicbrainz.org.",
+            "fr": "Un nom, ou l’adresse (ou l’identifiant) de la page de l’artiste sur musicbrainz.org.",
+            "de": "Ein Name oder die Adresse (oder Kennung) der Künstlerseite auf musicbrainz.org.",
+            "es": "Un nombre, o la dirección (o el identificador) de la página del artista en musicbrainz.org."
+          },
+          "placeholder": {
+            "en": "Muse",
+            "fr": "Muse",
+            "de": "Muse",
+            "es": "Muse"
+          }
+        }
+      ]
+    },
+    {
+      "key": "unfollow_artist",
+      "timeout_seconds": 20,
+      "label": {
+        "en": "Stop following an artist",
+        "fr": "Ne plus suivre un artiste",
+        "de": "Einem Künstler nicht mehr folgen",
+        "es": "Dejar de seguir a un artista"
+      },
+      "description": {
+        "en": "Removes an artist added with “Follow an artist”. The artists of the other sources are managed at their source.",
+        "fr": "Retire un artiste ajouté avec « Suivre un artiste ». Les artistes des autres sources se gèrent à leur source.",
+        "de": "Entfernt einen mit „Einem Künstler folgen“ hinzugefügten Künstler. Künstler aus anderen Quellen werden an ihrer Quelle verwaltet.",
+        "es": "Quita un artista añadido con «Seguir a un artista». Los artistas de las otras fuentes se gestionan en su fuente."
+      },
+      "fields": [
+        {
+          "key": "artist",
+          "type": "string",
+          "required": true,
+          "label": {
+            "en": "Artist",
+            "fr": "Artiste",
+            "de": "Künstler",
+            "es": "Artista"
+          },
+          "description": {
+            "en": "Its name as shown by “List the followed artists”, or its identifier.",
+            "fr": "Son nom tel que l’affiche « Lister les artistes suivis », ou son identifiant.",
+            "de": "Der Name wie in „Verfolgte Künstler auflisten“ oder die Kennung.",
+            "es": "Su nombre tal como lo muestra «Listar los artistas seguidos», o su identificador."
+          },
+          "placeholder": {
+            "en": "Muse",
+            "fr": "Muse",
+            "de": "Muse",
+            "es": "Muse"
+          }
+        }
+      ]
+    },
+    {
+      "key": "list_artists",
+      "timeout_seconds": 15,
+      "label": {
+        "en": "List the followed artists",
+        "fr": "Lister les artistes suivis",
+        "de": "Verfolgte Künstler auflisten",
+        "es": "Listar los artistas seguidos"
+      },
+      "description": {
+        "en": "Every followed artist with its source, and the sources that could not be read.",
+        "fr": "Tous les artistes suivis avec leur source, et les sources qui n’ont pas pu être lues.",
+        "de": "Alle verfolgten Künstler mit ihrer Quelle sowie die Quellen, die nicht gelesen werden konnten.",
+        "es": "Todos los artistas seguidos con su fuente, y las fuentes que no se pudieron leer."
+      }
+    },
+    {
+      "key": "refresh",
+      "timeout_seconds": 120,
+      "label": {
+        "en": "Read again now",
+        "fr": "Relire maintenant",
+        "de": "Jetzt neu lesen",
+        "es": "Volver a leer ahora"
+      },
+      "description": {
+        "en": "Reads the sources of artists and the releases without waiting for the next reading.",
+        "fr": "Relit les sources d’artistes et les sorties sans attendre la prochaine lecture.",
+        "de": "Liest die Künstlerquellen und die Veröffentlichungen, ohne auf den nächsten Lesevorgang zu warten.",
+        "es": "Vuelve a leer las fuentes de artistas y los lanzamientos sin esperar a la próxima lectura."
+      }
+    }
+  ],
+  "widgets": [
+    {
+      "key": "upcoming",
+      "icon": "calendar",
+      "label": {
+        "en": "Upcoming music releases",
+        "fr": "Prochaines sorties musique",
+        "de": "Kommende Musik-Releases",
+        "es": "Próximos lanzamientos"
+      },
+      "description": {
+        "en": "The next releases of the artists you follow, with date, kind and cover.",
+        "fr": "Les prochaines sorties des artistes que vous suivez, avec date, type et pochette.",
+        "de": "Die nächsten Veröffentlichungen Ihrer Künstler mit Datum, Art und Cover.",
+        "es": "Los próximos lanzamientos de los artistas que sigue, con fecha, tipo y portada."
+      },
+      "settings": [
+        {
+          "key": "kinds",
+          "type": "multi_select",
+          "label": {
+            "en": "Kinds of releases",
+            "fr": "Types de sorties",
+            "de": "Arten von Veröffentlichungen",
+            "es": "Tipos de lanzamientos"
+          },
+          "description": {
+            "en": "Empty: every kind kept in the configuration.",
+            "fr": "Vide : tous les types gardés dans la configuration.",
+            "de": "Leer: alle in der Konfiguration behaltenen Arten.",
+            "es": "Vacío: todos los tipos conservados en la configuración."
+          },
+          "options": [
+            {
+              "value": "album",
+              "label": {
+                "en": "Albums",
+                "fr": "Albums",
+                "de": "Alben",
+                "es": "Álbumes"
+              }
+            },
+            {
+              "value": "ep",
+              "label": {
+                "en": "EPs",
+                "fr": "EP",
+                "de": "EPs",
+                "es": "EP"
+              }
+            },
+            {
+              "value": "single",
+              "label": {
+                "en": "Singles",
+                "fr": "Singles",
+                "de": "Singles",
+                "es": "Sencillos"
+              }
+            },
+            {
+              "value": "live",
+              "label": {
+                "en": "Live albums",
+                "fr": "Albums live",
+                "de": "Live-Alben",
+                "es": "Álbumes en directo"
+              }
+            },
+            {
+              "value": "compilation",
+              "label": {
+                "en": "Compilations",
+                "fr": "Compilations",
+                "de": "Compilations",
+                "es": "Recopilatorios"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Others (soundtracks, remixes, demos…)",
+                "fr": "Autres (bandes originales, remix, démos…)",
+                "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+                "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+              }
+            }
+          ]
+        },
+        {
+          "key": "count",
+          "type": "select",
+          "label": {
+            "en": "Releases listed",
+            "fr": "Sorties listées",
+            "de": "Angezeigte Veröffentlichungen",
+            "es": "Lanzamientos mostrados"
+          },
+          "options": [
+            {
+              "value": "3",
+              "label": {
+                "en": "3",
+                "fr": "3",
+                "de": "3",
+                "es": "3"
+              }
+            },
+            {
+              "value": "5",
+              "label": {
+                "en": "5",
+                "fr": "5",
+                "de": "5",
+                "es": "5"
+              }
+            },
+            {
+              "value": "8",
+              "label": {
+                "en": "8",
+                "fr": "8",
+                "de": "8",
+                "es": "8"
+              }
+            }
+          ],
+          "default": "5"
+        }
+      ]
+    },
+    {
+      "key": "recent",
+      "icon": "disc",
+      "label": {
+        "en": "Latest music releases",
+        "fr": "Dernières sorties musique",
+        "de": "Neueste Musik-Releases",
+        "es": "Últimos lanzamientos"
+      },
+      "description": {
+        "en": "The latest records of the artists you follow, as a grid of covers.",
+        "fr": "Les derniers disques des artistes que vous suivez, en grille de pochettes.",
+        "de": "Die neuesten Platten Ihrer Künstler als Cover-Raster.",
+        "es": "Los últimos discos de los artistas que sigue, en cuadrícula de portadas."
+      },
+      "settings": [
+        {
+          "key": "kinds",
+          "type": "multi_select",
+          "label": {
+            "en": "Kinds of releases",
+            "fr": "Types de sorties",
+            "de": "Arten von Veröffentlichungen",
+            "es": "Tipos de lanzamientos"
+          },
+          "description": {
+            "en": "Empty: every kind kept in the configuration.",
+            "fr": "Vide : tous les types gardés dans la configuration.",
+            "de": "Leer: alle in der Konfiguration behaltenen Arten.",
+            "es": "Vacío: todos los tipos conservados en la configuración."
+          },
+          "options": [
+            {
+              "value": "album",
+              "label": {
+                "en": "Albums",
+                "fr": "Albums",
+                "de": "Alben",
+                "es": "Álbumes"
+              }
+            },
+            {
+              "value": "ep",
+              "label": {
+                "en": "EPs",
+                "fr": "EP",
+                "de": "EPs",
+                "es": "EP"
+              }
+            },
+            {
+              "value": "single",
+              "label": {
+                "en": "Singles",
+                "fr": "Singles",
+                "de": "Singles",
+                "es": "Sencillos"
+              }
+            },
+            {
+              "value": "live",
+              "label": {
+                "en": "Live albums",
+                "fr": "Albums live",
+                "de": "Live-Alben",
+                "es": "Álbumes en directo"
+              }
+            },
+            {
+              "value": "compilation",
+              "label": {
+                "en": "Compilations",
+                "fr": "Compilations",
+                "de": "Compilations",
+                "es": "Recopilatorios"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Others (soundtracks, remixes, demos…)",
+                "fr": "Autres (bandes originales, remix, démos…)",
+                "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+                "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+              }
+            }
+          ]
+        },
+        {
+          "key": "count",
+          "type": "select",
+          "label": {
+            "en": "Releases listed",
+            "fr": "Sorties listées",
+            "de": "Angezeigte Veröffentlichungen",
+            "es": "Lanzamientos mostrados"
+          },
+          "options": [
+            {
+              "value": "6",
+              "label": {
+                "en": "6",
+                "fr": "6",
+                "de": "6",
+                "es": "6"
+              }
+            },
+            {
+              "value": "9",
+              "label": {
+                "en": "9",
+                "fr": "9",
+                "de": "9",
+                "es": "9"
+              }
+            },
+            {
+              "value": "12",
+              "label": {
+                "en": "12",
+                "fr": "12",
+                "de": "12",
+                "es": "12"
+              }
+            }
+          ],
+          "default": "6"
+        },
+        {
+          "key": "days",
+          "type": "select",
+          "label": {
+            "en": "Period",
+            "fr": "Période",
+            "de": "Zeitraum",
+            "es": "Periodo"
+          },
+          "options": [
+            {
+              "value": "30",
+              "label": {
+                "en": "Last 30 days",
+                "fr": "30 derniers jours",
+                "de": "Letzte 30 Tage",
+                "es": "Últimos 30 días"
+              }
+            },
+            {
+              "value": "60",
+              "label": {
+                "en": "Last 60 days",
+                "fr": "60 derniers jours",
+                "de": "Letzte 60 Tage",
+                "es": "Últimos 60 días"
+              }
+            },
+            {
+              "value": "90",
+              "label": {
+                "en": "Last 90 days",
+                "fr": "90 derniers jours",
+                "de": "Letzte 90 Tage",
+                "es": "Últimos 90 días"
+              }
+            }
+          ],
+          "default": "90"
+        }
+      ]
+    },
+    {
+      "key": "next_release",
+      "icon": "music",
+      "label": {
+        "en": "Next music release",
+        "fr": "Prochaine sortie musique",
+        "de": "Nächstes Musik-Release",
+        "es": "Próximo lanzamiento"
+      },
+      "description": {
+        "en": "Countdown to the next release, with its cover, kind and date.",
+        "fr": "Compte à rebours avant la prochaine sortie, avec pochette, type et date.",
+        "de": "Countdown bis zur nächsten Veröffentlichung, mit Cover, Art und Datum.",
+        "es": "Cuenta atrás hasta el próximo lanzamiento, con portada, tipo y fecha."
+      },
+      "settings": [
+        {
+          "key": "kinds",
+          "type": "multi_select",
+          "label": {
+            "en": "Kinds of releases",
+            "fr": "Types de sorties",
+            "de": "Arten von Veröffentlichungen",
+            "es": "Tipos de lanzamientos"
+          },
+          "description": {
+            "en": "Empty: every kind kept in the configuration.",
+            "fr": "Vide : tous les types gardés dans la configuration.",
+            "de": "Leer: alle in der Konfiguration behaltenen Arten.",
+            "es": "Vacío: todos los tipos conservados en la configuración."
+          },
+          "options": [
+            {
+              "value": "album",
+              "label": {
+                "en": "Albums",
+                "fr": "Albums",
+                "de": "Alben",
+                "es": "Álbumes"
+              }
+            },
+            {
+              "value": "ep",
+              "label": {
+                "en": "EPs",
+                "fr": "EP",
+                "de": "EPs",
+                "es": "EP"
+              }
+            },
+            {
+              "value": "single",
+              "label": {
+                "en": "Singles",
+                "fr": "Singles",
+                "de": "Singles",
+                "es": "Sencillos"
+              }
+            },
+            {
+              "value": "live",
+              "label": {
+                "en": "Live albums",
+                "fr": "Albums live",
+                "de": "Live-Alben",
+                "es": "Álbumes en directo"
+              }
+            },
+            {
+              "value": "compilation",
+              "label": {
+                "en": "Compilations",
+                "fr": "Compilations",
+                "de": "Compilations",
+                "es": "Recopilatorios"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Others (soundtracks, remixes, demos…)",
+                "fr": "Autres (bandes originales, remix, démos…)",
+                "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+                "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scene_triggers": [
+    {
+      "key": "release_announced",
+      "label": {
+        "en": "MusicBrainz: release announced",
+        "fr": "MusicBrainz : sortie annoncée",
+        "de": "MusicBrainz: Veröffentlichung angekündigt",
+        "es": "MusicBrainz: lanzamiento anunciado"
+      },
+      "description": {
+        "en": "A new release of a followed artist appeared on MusicBrainz.",
+        "fr": "Une nouvelle sortie d’un artiste suivi est apparue sur MusicBrainz.",
+        "de": "Eine neue Veröffentlichung eines verfolgten Künstlers ist auf MusicBrainz erschienen.",
+        "es": "Ha aparecido en MusicBrainz un nuevo lanzamiento de un artista seguido."
+      },
+      "fields": [
+        {
+          "key": "kind",
+          "type": "multi_select",
+          "label": {
+            "en": "Kinds of releases",
+            "fr": "Types de sorties",
+            "de": "Arten von Veröffentlichungen",
+            "es": "Tipos de lanzamientos"
+          },
+          "description": {
+            "en": "Empty: every kind kept in the configuration.",
+            "fr": "Vide : tous les types gardés dans la configuration.",
+            "de": "Leer: alle in der Konfiguration behaltenen Arten.",
+            "es": "Vacío: todos los tipos conservados en la configuración."
+          },
+          "options": [
+            {
+              "value": "album",
+              "label": {
+                "en": "Albums",
+                "fr": "Albums",
+                "de": "Alben",
+                "es": "Álbumes"
+              }
+            },
+            {
+              "value": "ep",
+              "label": {
+                "en": "EPs",
+                "fr": "EP",
+                "de": "EPs",
+                "es": "EP"
+              }
+            },
+            {
+              "value": "single",
+              "label": {
+                "en": "Singles",
+                "fr": "Singles",
+                "de": "Singles",
+                "es": "Sencillos"
+              }
+            },
+            {
+              "value": "live",
+              "label": {
+                "en": "Live albums",
+                "fr": "Albums live",
+                "de": "Live-Alben",
+                "es": "Álbumes en directo"
+              }
+            },
+            {
+              "value": "compilation",
+              "label": {
+                "en": "Compilations",
+                "fr": "Compilations",
+                "de": "Compilations",
+                "es": "Recopilatorios"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Others (soundtracks, remixes, demos…)",
+                "fr": "Autres (bandes originales, remix, démos…)",
+                "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+                "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+              }
+            }
+          ]
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Artist",
+            "fr": "Artiste",
+            "de": "Künstler",
+            "es": "Artista"
+          },
+          "description": {
+            "en": "Exactly as MusicBrainz writes it (case-sensitive). Empty: any followed artist.",
+            "fr": "Exactement comme MusicBrainz l’écrit (majuscules comprises). Vide : tout artiste suivi.",
+            "de": "Genau wie MusicBrainz ihn schreibt (Groß-/Kleinschreibung). Leer: jeder verfolgte Künstler.",
+            "es": "Exactamente como lo escribe MusicBrainz (con mayúsculas). Vacío: cualquier artista seguido."
+          },
+          "placeholder": {
+            "en": "Muse",
+            "fr": "Muse",
+            "de": "Muse",
+            "es": "Muse"
+          }
+        }
+      ],
+      "variables": [
+        {
+          "key": "full_title",
+          "type": "string",
+          "label": {
+            "en": "Artist and title",
+            "fr": "Artiste et titre",
+            "de": "Künstler und Titel",
+            "es": "Artista y título"
+          },
+          "description": {
+            "en": "“Muse – The Wow! Signal”",
+            "fr": "“Muse – The Wow! Signal”",
+            "de": "“Muse – The Wow! Signal”",
+            "es": "“Muse – The Wow! Signal”"
+          }
+        },
+        {
+          "key": "title",
+          "type": "string",
+          "label": {
+            "en": "Title",
+            "fr": "Titre",
+            "de": "Titel",
+            "es": "Título"
+          }
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Followed artist",
+            "fr": "Artiste suivi",
+            "de": "Verfolgter Künstler",
+            "es": "Artista seguido"
+          },
+          "description": {
+            "en": "The followed artist credited, as MusicBrainz writes it.",
+            "fr": "L’artiste suivi crédité, tel que MusicBrainz l’écrit.",
+            "de": "Der genannte verfolgte Künstler, wie MusicBrainz ihn schreibt.",
+            "es": "El artista seguido acreditado, tal como lo escribe MusicBrainz."
+          }
+        },
+        {
+          "key": "credit",
+          "type": "string",
+          "label": {
+            "en": "Credit",
+            "fr": "Crédit",
+            "de": "Credit",
+            "es": "Crédito"
+          },
+          "description": {
+            "en": "Every credited artist: “David Bowie & Queen”.",
+            "fr": "Tous les artistes crédités : « David Bowie & Queen ».",
+            "de": "Alle genannten Künstler: „David Bowie & Queen“.",
+            "es": "Todos los artistas acreditados: «David Bowie & Queen»."
+          }
+        },
+        {
+          "key": "kind",
+          "type": "string",
+          "label": {
+            "en": "Kind (key)",
+            "fr": "Type (clé)",
+            "de": "Art (Schlüssel)",
+            "es": "Tipo (clave)"
+          },
+          "description": {
+            "en": "album, ep, single, live, compilation, other",
+            "fr": "album, ep, single, live, compilation, other",
+            "de": "album, ep, single, live, compilation, other",
+            "es": "album, ep, single, live, compilation, other"
+          }
+        },
+        {
+          "key": "kind_name",
+          "type": "string",
+          "label": {
+            "en": "Kind",
+            "fr": "Type",
+            "de": "Art",
+            "es": "Tipo"
+          }
+        },
+        {
+          "key": "date",
+          "type": "string",
+          "label": {
+            "en": "Release date",
+            "fr": "Date de sortie",
+            "de": "Erscheinungsdatum",
+            "es": "Fecha de lanzamiento"
+          },
+          "description": {
+            "en": "2026-11-20; “2027-03” or “2027” when the day is not announced.",
+            "fr": "2026-11-20 ; « 2027-03 » ou « 2027 » quand le jour n’est pas annoncé.",
+            "de": "2026-11-20; „2027-03“ oder „2027“, wenn der Tag nicht bekannt ist.",
+            "es": "2026-11-20; «2027-03» o «2027» cuando el día no está anunciado."
+          }
+        },
+        {
+          "key": "date_text",
+          "type": "string",
+          "label": {
+            "en": "Release date (text)",
+            "fr": "Date de sortie (texte)",
+            "de": "Erscheinungsdatum (Text)",
+            "es": "Fecha de lanzamiento (texto)"
+          }
+        },
+        {
+          "key": "days",
+          "type": "number",
+          "label": {
+            "en": "Days until the release",
+            "fr": "Jours avant la sortie",
+            "de": "Tage bis zur Veröffentlichung",
+            "es": "Días hasta el lanzamiento"
+          },
+          "description": {
+            "en": "Negative once out; empty when the day is not announced.",
+            "fr": "Négatif après la sortie ; vide quand le jour n’est pas annoncé.",
+            "de": "Negativ nach Erscheinen; leer, wenn der Tag nicht bekannt ist.",
+            "es": "Negativo tras la salida; vacío cuando el día no está anunciado."
+          }
+        },
+        {
+          "key": "url",
+          "type": "string",
+          "label": {
+            "en": "MusicBrainz page",
+            "fr": "Page MusicBrainz",
+            "de": "MusicBrainz-Seite",
+            "es": "Página de MusicBrainz"
+          }
+        },
+        {
+          "key": "cover_url",
+          "type": "string",
+          "label": {
+            "en": "Cover address",
+            "fr": "Adresse de la pochette",
+            "de": "Cover-Adresse",
+            "es": "Dirección de la portada"
+          },
+          "description": {
+            "en": "Empty when the Cover Art Archive has no cover yet.",
+            "fr": "Vide quand la Cover Art Archive n’a pas encore de pochette.",
+            "de": "Leer, wenn das Cover Art Archive noch kein Cover hat.",
+            "es": "Vacío cuando Cover Art Archive aún no tiene portada."
+          }
+        },
+        {
+          "key": "text",
+          "type": "string",
+          "label": {
+            "en": "Ready sentence",
+            "fr": "Phrase toute faite",
+            "de": "Fertiger Satz",
+            "es": "Frase hecha"
+          },
+          "description": {
+            "en": "In the language of the configuration, to send as a message.",
+            "fr": "Dans la langue de la configuration, à envoyer en message.",
+            "de": "In der Sprache der Konfiguration, zum Versenden als Nachricht.",
+            "es": "En el idioma de la configuración, para enviar como mensaje."
+          }
+        },
+        {
+          "key": "release_id",
+          "type": "string",
+          "label": {
+            "en": "MusicBrainz identifier",
+            "fr": "Identifiant MusicBrainz",
+            "de": "MusicBrainz-Kennung",
+            "es": "Identificador de MusicBrainz"
+          }
+        }
+      ]
+    },
+    {
+      "key": "release_day",
+      "label": {
+        "en": "MusicBrainz: release day",
+        "fr": "MusicBrainz : jour de sortie",
+        "de": "MusicBrainz: Erscheinungstag",
+        "es": "MusicBrainz: día de lanzamiento"
+      },
+      "description": {
+        "en": "A release of a followed artist comes out today, tomorrow or in a week, at the hour of the configuration.",
+        "fr": "Une sortie d’un artiste suivi a lieu aujourd’hui, demain ou dans une semaine, à l’heure de la configuration.",
+        "de": "Eine Veröffentlichung eines verfolgten Künstlers erscheint heute, morgen oder in einer Woche, zur Stunde der Konfiguration.",
+        "es": "Un lanzamiento de un artista seguido sale hoy, mañana o dentro de una semana, a la hora de la configuración."
+      },
+      "fields": [
+        {
+          "key": "lead",
+          "type": "select",
+          "required": true,
+          "default": "0",
+          "label": {
+            "en": "When",
+            "fr": "Quand",
+            "de": "Wann",
+            "es": "Cuándo"
+          },
+          "options": [
+            {
+              "value": "0",
+              "label": {
+                "en": "The day of the release",
+                "fr": "Le jour de la sortie",
+                "de": "Am Erscheinungstag",
+                "es": "El día del lanzamiento"
+              }
+            },
+            {
+              "value": "1",
+              "label": {
+                "en": "The day before",
+                "fr": "La veille",
+                "de": "Am Vortag",
+                "es": "La víspera"
+              }
+            },
+            {
+              "value": "7",
+              "label": {
+                "en": "A week before",
+                "fr": "Une semaine avant",
+                "de": "Eine Woche vorher",
+                "es": "Una semana antes"
+              }
+            }
+          ]
+        },
+        {
+          "key": "kind",
+          "type": "multi_select",
+          "label": {
+            "en": "Kinds of releases",
+            "fr": "Types de sorties",
+            "de": "Arten von Veröffentlichungen",
+            "es": "Tipos de lanzamientos"
+          },
+          "description": {
+            "en": "Empty: every kind kept in the configuration.",
+            "fr": "Vide : tous les types gardés dans la configuration.",
+            "de": "Leer: alle in der Konfiguration behaltenen Arten.",
+            "es": "Vacío: todos los tipos conservados en la configuración."
+          },
+          "options": [
+            {
+              "value": "album",
+              "label": {
+                "en": "Albums",
+                "fr": "Albums",
+                "de": "Alben",
+                "es": "Álbumes"
+              }
+            },
+            {
+              "value": "ep",
+              "label": {
+                "en": "EPs",
+                "fr": "EP",
+                "de": "EPs",
+                "es": "EP"
+              }
+            },
+            {
+              "value": "single",
+              "label": {
+                "en": "Singles",
+                "fr": "Singles",
+                "de": "Singles",
+                "es": "Sencillos"
+              }
+            },
+            {
+              "value": "live",
+              "label": {
+                "en": "Live albums",
+                "fr": "Albums live",
+                "de": "Live-Alben",
+                "es": "Álbumes en directo"
+              }
+            },
+            {
+              "value": "compilation",
+              "label": {
+                "en": "Compilations",
+                "fr": "Compilations",
+                "de": "Compilations",
+                "es": "Recopilatorios"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Others (soundtracks, remixes, demos…)",
+                "fr": "Autres (bandes originales, remix, démos…)",
+                "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+                "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+              }
+            }
+          ]
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Artist",
+            "fr": "Artiste",
+            "de": "Künstler",
+            "es": "Artista"
+          },
+          "description": {
+            "en": "Exactly as MusicBrainz writes it (case-sensitive). Empty: any followed artist.",
+            "fr": "Exactement comme MusicBrainz l’écrit (majuscules comprises). Vide : tout artiste suivi.",
+            "de": "Genau wie MusicBrainz ihn schreibt (Groß-/Kleinschreibung). Leer: jeder verfolgte Künstler.",
+            "es": "Exactamente como lo escribe MusicBrainz (con mayúsculas). Vacío: cualquier artista seguido."
+          },
+          "placeholder": {
+            "en": "Muse",
+            "fr": "Muse",
+            "de": "Muse",
+            "es": "Muse"
+          }
+        }
+      ],
+      "variables": [
+        {
+          "key": "full_title",
+          "type": "string",
+          "label": {
+            "en": "Artist and title",
+            "fr": "Artiste et titre",
+            "de": "Künstler und Titel",
+            "es": "Artista y título"
+          },
+          "description": {
+            "en": "“Muse – The Wow! Signal”",
+            "fr": "“Muse – The Wow! Signal”",
+            "de": "“Muse – The Wow! Signal”",
+            "es": "“Muse – The Wow! Signal”"
+          }
+        },
+        {
+          "key": "title",
+          "type": "string",
+          "label": {
+            "en": "Title",
+            "fr": "Titre",
+            "de": "Titel",
+            "es": "Título"
+          }
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Followed artist",
+            "fr": "Artiste suivi",
+            "de": "Verfolgter Künstler",
+            "es": "Artista seguido"
+          },
+          "description": {
+            "en": "The followed artist credited, as MusicBrainz writes it.",
+            "fr": "L’artiste suivi crédité, tel que MusicBrainz l’écrit.",
+            "de": "Der genannte verfolgte Künstler, wie MusicBrainz ihn schreibt.",
+            "es": "El artista seguido acreditado, tal como lo escribe MusicBrainz."
+          }
+        },
+        {
+          "key": "credit",
+          "type": "string",
+          "label": {
+            "en": "Credit",
+            "fr": "Crédit",
+            "de": "Credit",
+            "es": "Crédito"
+          },
+          "description": {
+            "en": "Every credited artist: “David Bowie & Queen”.",
+            "fr": "Tous les artistes crédités : « David Bowie & Queen ».",
+            "de": "Alle genannten Künstler: „David Bowie & Queen“.",
+            "es": "Todos los artistas acreditados: «David Bowie & Queen»."
+          }
+        },
+        {
+          "key": "kind",
+          "type": "string",
+          "label": {
+            "en": "Kind (key)",
+            "fr": "Type (clé)",
+            "de": "Art (Schlüssel)",
+            "es": "Tipo (clave)"
+          },
+          "description": {
+            "en": "album, ep, single, live, compilation, other",
+            "fr": "album, ep, single, live, compilation, other",
+            "de": "album, ep, single, live, compilation, other",
+            "es": "album, ep, single, live, compilation, other"
+          }
+        },
+        {
+          "key": "kind_name",
+          "type": "string",
+          "label": {
+            "en": "Kind",
+            "fr": "Type",
+            "de": "Art",
+            "es": "Tipo"
+          }
+        },
+        {
+          "key": "date",
+          "type": "string",
+          "label": {
+            "en": "Release date",
+            "fr": "Date de sortie",
+            "de": "Erscheinungsdatum",
+            "es": "Fecha de lanzamiento"
+          },
+          "description": {
+            "en": "2026-11-20; “2027-03” or “2027” when the day is not announced.",
+            "fr": "2026-11-20 ; « 2027-03 » ou « 2027 » quand le jour n’est pas annoncé.",
+            "de": "2026-11-20; „2027-03“ oder „2027“, wenn der Tag nicht bekannt ist.",
+            "es": "2026-11-20; «2027-03» o «2027» cuando el día no está anunciado."
+          }
+        },
+        {
+          "key": "date_text",
+          "type": "string",
+          "label": {
+            "en": "Release date (text)",
+            "fr": "Date de sortie (texte)",
+            "de": "Erscheinungsdatum (Text)",
+            "es": "Fecha de lanzamiento (texto)"
+          }
+        },
+        {
+          "key": "days",
+          "type": "number",
+          "label": {
+            "en": "Days until the release",
+            "fr": "Jours avant la sortie",
+            "de": "Tage bis zur Veröffentlichung",
+            "es": "Días hasta el lanzamiento"
+          },
+          "description": {
+            "en": "Negative once out; empty when the day is not announced.",
+            "fr": "Négatif après la sortie ; vide quand le jour n’est pas annoncé.",
+            "de": "Negativ nach Erscheinen; leer, wenn der Tag nicht bekannt ist.",
+            "es": "Negativo tras la salida; vacío cuando el día no está anunciado."
+          }
+        },
+        {
+          "key": "url",
+          "type": "string",
+          "label": {
+            "en": "MusicBrainz page",
+            "fr": "Page MusicBrainz",
+            "de": "MusicBrainz-Seite",
+            "es": "Página de MusicBrainz"
+          }
+        },
+        {
+          "key": "cover_url",
+          "type": "string",
+          "label": {
+            "en": "Cover address",
+            "fr": "Adresse de la pochette",
+            "de": "Cover-Adresse",
+            "es": "Dirección de la portada"
+          },
+          "description": {
+            "en": "Empty when the Cover Art Archive has no cover yet.",
+            "fr": "Vide quand la Cover Art Archive n’a pas encore de pochette.",
+            "de": "Leer, wenn das Cover Art Archive noch kein Cover hat.",
+            "es": "Vacío cuando Cover Art Archive aún no tiene portada."
+          }
+        },
+        {
+          "key": "text",
+          "type": "string",
+          "label": {
+            "en": "Ready sentence",
+            "fr": "Phrase toute faite",
+            "de": "Fertiger Satz",
+            "es": "Frase hecha"
+          },
+          "description": {
+            "en": "In the language of the configuration, to send as a message.",
+            "fr": "Dans la langue de la configuration, à envoyer en message.",
+            "de": "In der Sprache der Konfiguration, zum Versenden als Nachricht.",
+            "es": "En el idioma de la configuración, para enviar como mensaje."
+          }
+        },
+        {
+          "key": "release_id",
+          "type": "string",
+          "label": {
+            "en": "MusicBrainz identifier",
+            "fr": "Identifiant MusicBrainz",
+            "de": "MusicBrainz-Kennung",
+            "es": "Identificador de MusicBrainz"
+          }
+        },
+        {
+          "key": "lead",
+          "type": "string",
+          "label": {
+            "en": "Days ahead",
+            "fr": "Jours d’avance",
+            "de": "Tage im Voraus",
+            "es": "Días de antelación"
+          },
+          "description": {
+            "en": "0, 1, 7",
+            "fr": "0, 1, 7",
+            "de": "0, 1, 7",
+            "es": "0, 1, 7"
+          }
+        }
+      ]
+    },
+    {
+      "key": "release_date_changed",
+      "label": {
+        "en": "MusicBrainz: release date changed",
+        "fr": "MusicBrainz : date de sortie modifiée",
+        "de": "MusicBrainz: Erscheinungsdatum geändert",
+        "es": "MusicBrainz: fecha de lanzamiento modificada"
+      },
+      "description": {
+        "en": "The date of an upcoming release changed: postponed, brought forward or made precise.",
+        "fr": "La date d’une sortie à venir a changé : repoussée, avancée ou précisée.",
+        "de": "Das Datum einer kommenden Veröffentlichung hat sich geändert: verschoben, vorgezogen oder präzisiert.",
+        "es": "La fecha de un próximo lanzamiento ha cambiado: aplazada, adelantada o precisada."
+      },
+      "fields": [
+        {
+          "key": "kind",
+          "type": "multi_select",
+          "label": {
+            "en": "Kinds of releases",
+            "fr": "Types de sorties",
+            "de": "Arten von Veröffentlichungen",
+            "es": "Tipos de lanzamientos"
+          },
+          "description": {
+            "en": "Empty: every kind kept in the configuration.",
+            "fr": "Vide : tous les types gardés dans la configuration.",
+            "de": "Leer: alle in der Konfiguration behaltenen Arten.",
+            "es": "Vacío: todos los tipos conservados en la configuración."
+          },
+          "options": [
+            {
+              "value": "album",
+              "label": {
+                "en": "Albums",
+                "fr": "Albums",
+                "de": "Alben",
+                "es": "Álbumes"
+              }
+            },
+            {
+              "value": "ep",
+              "label": {
+                "en": "EPs",
+                "fr": "EP",
+                "de": "EPs",
+                "es": "EP"
+              }
+            },
+            {
+              "value": "single",
+              "label": {
+                "en": "Singles",
+                "fr": "Singles",
+                "de": "Singles",
+                "es": "Sencillos"
+              }
+            },
+            {
+              "value": "live",
+              "label": {
+                "en": "Live albums",
+                "fr": "Albums live",
+                "de": "Live-Alben",
+                "es": "Álbumes en directo"
+              }
+            },
+            {
+              "value": "compilation",
+              "label": {
+                "en": "Compilations",
+                "fr": "Compilations",
+                "de": "Compilations",
+                "es": "Recopilatorios"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Others (soundtracks, remixes, demos…)",
+                "fr": "Autres (bandes originales, remix, démos…)",
+                "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+                "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+              }
+            }
+          ]
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Artist",
+            "fr": "Artiste",
+            "de": "Künstler",
+            "es": "Artista"
+          },
+          "description": {
+            "en": "Exactly as MusicBrainz writes it (case-sensitive). Empty: any followed artist.",
+            "fr": "Exactement comme MusicBrainz l’écrit (majuscules comprises). Vide : tout artiste suivi.",
+            "de": "Genau wie MusicBrainz ihn schreibt (Groß-/Kleinschreibung). Leer: jeder verfolgte Künstler.",
+            "es": "Exactamente como lo escribe MusicBrainz (con mayúsculas). Vacío: cualquier artista seguido."
+          },
+          "placeholder": {
+            "en": "Muse",
+            "fr": "Muse",
+            "de": "Muse",
+            "es": "Muse"
+          }
+        }
+      ],
+      "variables": [
+        {
+          "key": "full_title",
+          "type": "string",
+          "label": {
+            "en": "Artist and title",
+            "fr": "Artiste et titre",
+            "de": "Künstler und Titel",
+            "es": "Artista y título"
+          },
+          "description": {
+            "en": "“Muse – The Wow! Signal”",
+            "fr": "“Muse – The Wow! Signal”",
+            "de": "“Muse – The Wow! Signal”",
+            "es": "“Muse – The Wow! Signal”"
+          }
+        },
+        {
+          "key": "title",
+          "type": "string",
+          "label": {
+            "en": "Title",
+            "fr": "Titre",
+            "de": "Titel",
+            "es": "Título"
+          }
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Followed artist",
+            "fr": "Artiste suivi",
+            "de": "Verfolgter Künstler",
+            "es": "Artista seguido"
+          },
+          "description": {
+            "en": "The followed artist credited, as MusicBrainz writes it.",
+            "fr": "L’artiste suivi crédité, tel que MusicBrainz l’écrit.",
+            "de": "Der genannte verfolgte Künstler, wie MusicBrainz ihn schreibt.",
+            "es": "El artista seguido acreditado, tal como lo escribe MusicBrainz."
+          }
+        },
+        {
+          "key": "credit",
+          "type": "string",
+          "label": {
+            "en": "Credit",
+            "fr": "Crédit",
+            "de": "Credit",
+            "es": "Crédito"
+          },
+          "description": {
+            "en": "Every credited artist: “David Bowie & Queen”.",
+            "fr": "Tous les artistes crédités : « David Bowie & Queen ».",
+            "de": "Alle genannten Künstler: „David Bowie & Queen“.",
+            "es": "Todos los artistas acreditados: «David Bowie & Queen»."
+          }
+        },
+        {
+          "key": "kind",
+          "type": "string",
+          "label": {
+            "en": "Kind (key)",
+            "fr": "Type (clé)",
+            "de": "Art (Schlüssel)",
+            "es": "Tipo (clave)"
+          },
+          "description": {
+            "en": "album, ep, single, live, compilation, other",
+            "fr": "album, ep, single, live, compilation, other",
+            "de": "album, ep, single, live, compilation, other",
+            "es": "album, ep, single, live, compilation, other"
+          }
+        },
+        {
+          "key": "kind_name",
+          "type": "string",
+          "label": {
+            "en": "Kind",
+            "fr": "Type",
+            "de": "Art",
+            "es": "Tipo"
+          }
+        },
+        {
+          "key": "date",
+          "type": "string",
+          "label": {
+            "en": "Release date",
+            "fr": "Date de sortie",
+            "de": "Erscheinungsdatum",
+            "es": "Fecha de lanzamiento"
+          },
+          "description": {
+            "en": "2026-11-20; “2027-03” or “2027” when the day is not announced.",
+            "fr": "2026-11-20 ; « 2027-03 » ou « 2027 » quand le jour n’est pas annoncé.",
+            "de": "2026-11-20; „2027-03“ oder „2027“, wenn der Tag nicht bekannt ist.",
+            "es": "2026-11-20; «2027-03» o «2027» cuando el día no está anunciado."
+          }
+        },
+        {
+          "key": "date_text",
+          "type": "string",
+          "label": {
+            "en": "Release date (text)",
+            "fr": "Date de sortie (texte)",
+            "de": "Erscheinungsdatum (Text)",
+            "es": "Fecha de lanzamiento (texto)"
+          }
+        },
+        {
+          "key": "days",
+          "type": "number",
+          "label": {
+            "en": "Days until the release",
+            "fr": "Jours avant la sortie",
+            "de": "Tage bis zur Veröffentlichung",
+            "es": "Días hasta el lanzamiento"
+          },
+          "description": {
+            "en": "Negative once out; empty when the day is not announced.",
+            "fr": "Négatif après la sortie ; vide quand le jour n’est pas annoncé.",
+            "de": "Negativ nach Erscheinen; leer, wenn der Tag nicht bekannt ist.",
+            "es": "Negativo tras la salida; vacío cuando el día no está anunciado."
+          }
+        },
+        {
+          "key": "url",
+          "type": "string",
+          "label": {
+            "en": "MusicBrainz page",
+            "fr": "Page MusicBrainz",
+            "de": "MusicBrainz-Seite",
+            "es": "Página de MusicBrainz"
+          }
+        },
+        {
+          "key": "cover_url",
+          "type": "string",
+          "label": {
+            "en": "Cover address",
+            "fr": "Adresse de la pochette",
+            "de": "Cover-Adresse",
+            "es": "Dirección de la portada"
+          },
+          "description": {
+            "en": "Empty when the Cover Art Archive has no cover yet.",
+            "fr": "Vide quand la Cover Art Archive n’a pas encore de pochette.",
+            "de": "Leer, wenn das Cover Art Archive noch kein Cover hat.",
+            "es": "Vacío cuando Cover Art Archive aún no tiene portada."
+          }
+        },
+        {
+          "key": "text",
+          "type": "string",
+          "label": {
+            "en": "Ready sentence",
+            "fr": "Phrase toute faite",
+            "de": "Fertiger Satz",
+            "es": "Frase hecha"
+          },
+          "description": {
+            "en": "In the language of the configuration, to send as a message.",
+            "fr": "Dans la langue de la configuration, à envoyer en message.",
+            "de": "In der Sprache der Konfiguration, zum Versenden als Nachricht.",
+            "es": "En el idioma de la configuración, para enviar como mensaje."
+          }
+        },
+        {
+          "key": "release_id",
+          "type": "string",
+          "label": {
+            "en": "MusicBrainz identifier",
+            "fr": "Identifiant MusicBrainz",
+            "de": "MusicBrainz-Kennung",
+            "es": "Identificador de MusicBrainz"
+          }
+        },
+        {
+          "key": "previous_date",
+          "type": "string",
+          "label": {
+            "en": "Previous date",
+            "fr": "Ancienne date",
+            "de": "Bisheriges Datum",
+            "es": "Fecha anterior"
+          }
+        },
+        {
+          "key": "previous_date_text",
+          "type": "string",
+          "label": {
+            "en": "Previous date (text)",
+            "fr": "Ancienne date (texte)",
+            "de": "Bisheriges Datum (Text)",
+            "es": "Fecha anterior (texto)"
+          }
+        }
+      ]
+    }
+  ],
+  "scene_actions": [
+    {
+      "key": "get_next_release",
+      "timeout_seconds": 10,
+      "label": {
+        "en": "MusicBrainz: next release",
+        "fr": "MusicBrainz : prochaine sortie",
+        "de": "MusicBrainz: nächste Veröffentlichung",
+        "es": "MusicBrainz: próximo lanzamiento"
+      },
+      "description": {
+        "en": "The next release of the artists you follow, to put in a message or a condition.",
+        "fr": "La prochaine sortie des artistes que vous suivez, à mettre dans un message ou une condition.",
+        "de": "Die nächste Veröffentlichung Ihrer Künstler, für eine Nachricht oder eine Bedingung.",
+        "es": "El próximo lanzamiento de los artistas que sigue, para un mensaje o una condición."
+      },
+      "fields": [
+        {
+          "key": "kind",
+          "type": "multi_select",
+          "label": {
+            "en": "Kinds of releases",
+            "fr": "Types de sorties",
+            "de": "Arten von Veröffentlichungen",
+            "es": "Tipos de lanzamientos"
+          },
+          "description": {
+            "en": "Empty: every kind kept in the configuration.",
+            "fr": "Vide : tous les types gardés dans la configuration.",
+            "de": "Leer: alle in der Konfiguration behaltenen Arten.",
+            "es": "Vacío: todos los tipos conservados en la configuración."
+          },
+          "options": [
+            {
+              "value": "album",
+              "label": {
+                "en": "Albums",
+                "fr": "Albums",
+                "de": "Alben",
+                "es": "Álbumes"
+              }
+            },
+            {
+              "value": "ep",
+              "label": {
+                "en": "EPs",
+                "fr": "EP",
+                "de": "EPs",
+                "es": "EP"
+              }
+            },
+            {
+              "value": "single",
+              "label": {
+                "en": "Singles",
+                "fr": "Singles",
+                "de": "Singles",
+                "es": "Sencillos"
+              }
+            },
+            {
+              "value": "live",
+              "label": {
+                "en": "Live albums",
+                "fr": "Albums live",
+                "de": "Live-Alben",
+                "es": "Álbumes en directo"
+              }
+            },
+            {
+              "value": "compilation",
+              "label": {
+                "en": "Compilations",
+                "fr": "Compilations",
+                "de": "Compilations",
+                "es": "Recopilatorios"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Others (soundtracks, remixes, demos…)",
+                "fr": "Autres (bandes originales, remix, démos…)",
+                "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+                "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+              }
+            }
+          ]
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Artist",
+            "fr": "Artiste",
+            "de": "Künstler",
+            "es": "Artista"
+          },
+          "description": {
+            "en": "Its name on MusicBrainz (case does not matter). Empty: any followed artist.",
+            "fr": "Son nom sur MusicBrainz (sans tenir compte des majuscules). Vide : tout artiste suivi.",
+            "de": "Der Name auf MusicBrainz (Groß-/Kleinschreibung egal). Leer: jeder verfolgte Künstler.",
+            "es": "Su nombre en MusicBrainz (sin distinguir mayúsculas). Vacío: cualquier artista seguido."
+          },
+          "placeholder": {
+            "en": "Muse",
+            "fr": "Muse",
+            "de": "Muse",
+            "es": "Muse"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "key": "found",
+          "type": "boolean",
+          "label": {
+            "en": "A release was found",
+            "fr": "Une sortie a été trouvée",
+            "de": "Eine Veröffentlichung wurde gefunden",
+            "es": "Se encontró un lanzamiento"
+          }
+        },
+        {
+          "key": "full_title",
+          "type": "string",
+          "label": {
+            "en": "Artist and title",
+            "fr": "Artiste et titre",
+            "de": "Künstler und Titel",
+            "es": "Artista y título"
+          }
+        },
+        {
+          "key": "title",
+          "type": "string",
+          "label": {
+            "en": "Title",
+            "fr": "Titre",
+            "de": "Titel",
+            "es": "Título"
+          }
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Followed artist",
+            "fr": "Artiste suivi",
+            "de": "Verfolgter Künstler",
+            "es": "Artista seguido"
+          }
+        },
+        {
+          "key": "credit",
+          "type": "string",
+          "label": {
+            "en": "Credit",
+            "fr": "Crédit",
+            "de": "Credit",
+            "es": "Crédito"
+          }
+        },
+        {
+          "key": "kind",
+          "type": "string",
+          "label": {
+            "en": "Kind (key)",
+            "fr": "Type (clé)",
+            "de": "Art (Schlüssel)",
+            "es": "Tipo (clave)"
+          },
+          "description": {
+            "en": "album, ep, single, live, compilation, other",
+            "fr": "album, ep, single, live, compilation, other",
+            "de": "album, ep, single, live, compilation, other",
+            "es": "album, ep, single, live, compilation, other"
+          }
+        },
+        {
+          "key": "kind_name",
+          "type": "string",
+          "label": {
+            "en": "Kind",
+            "fr": "Type",
+            "de": "Art",
+            "es": "Tipo"
+          }
+        },
+        {
+          "key": "date",
+          "type": "string",
+          "label": {
+            "en": "Release date",
+            "fr": "Date de sortie",
+            "de": "Erscheinungsdatum",
+            "es": "Fecha de lanzamiento"
+          }
+        },
+        {
+          "key": "date_text",
+          "type": "string",
+          "label": {
+            "en": "Release date (text)",
+            "fr": "Date de sortie (texte)",
+            "de": "Erscheinungsdatum (Text)",
+            "es": "Fecha de lanzamiento (texto)"
+          }
+        },
+        {
+          "key": "days",
+          "type": "number",
+          "label": {
+            "en": "Days until the release",
+            "fr": "Jours avant la sortie",
+            "de": "Tage bis zur Veröffentlichung",
+            "es": "Días hasta el lanzamiento"
+          },
+          "description": {
+            "en": "-1 when the day is not announced or nothing was found.",
+            "fr": "-1 quand le jour n’est pas annoncé ou que rien n’a été trouvé.",
+            "de": "-1, wenn der Tag nicht bekannt ist oder nichts gefunden wurde.",
+            "es": "-1 cuando el día no está anunciado o no se encontró nada."
+          }
+        },
+        {
+          "key": "url",
+          "type": "string",
+          "label": {
+            "en": "MusicBrainz page",
+            "fr": "Page MusicBrainz",
+            "de": "MusicBrainz-Seite",
+            "es": "Página de MusicBrainz"
+          }
+        },
+        {
+          "key": "cover_url",
+          "type": "string",
+          "label": {
+            "en": "Cover address",
+            "fr": "Adresse de la pochette",
+            "de": "Cover-Adresse",
+            "es": "Dirección de la portada"
+          }
+        },
+        {
+          "key": "text",
+          "type": "string",
+          "label": {
+            "en": "Ready sentence",
+            "fr": "Phrase toute faite",
+            "de": "Fertiger Satz",
+            "es": "Frase hecha"
+          }
+        }
+      ]
+    },
+    {
+      "key": "get_latest_release",
+      "timeout_seconds": 10,
+      "label": {
+        "en": "MusicBrainz: latest release",
+        "fr": "MusicBrainz : dernière sortie",
+        "de": "MusicBrainz: neueste Veröffentlichung",
+        "es": "MusicBrainz: último lanzamiento"
+      },
+      "description": {
+        "en": "The latest release already out (100 days back at most) of the artists you follow.",
+        "fr": "La dernière sortie déjà parue (100 jours en arrière au plus) des artistes que vous suivez.",
+        "de": "Die neueste bereits erschienene Veröffentlichung (höchstens 100 Tage zurück) Ihrer Künstler.",
+        "es": "El último lanzamiento ya publicado (100 días atrás como máximo) de los artistas que sigue."
+      },
+      "fields": [
+        {
+          "key": "kind",
+          "type": "multi_select",
+          "label": {
+            "en": "Kinds of releases",
+            "fr": "Types de sorties",
+            "de": "Arten von Veröffentlichungen",
+            "es": "Tipos de lanzamientos"
+          },
+          "description": {
+            "en": "Empty: every kind kept in the configuration.",
+            "fr": "Vide : tous les types gardés dans la configuration.",
+            "de": "Leer: alle in der Konfiguration behaltenen Arten.",
+            "es": "Vacío: todos los tipos conservados en la configuración."
+          },
+          "options": [
+            {
+              "value": "album",
+              "label": {
+                "en": "Albums",
+                "fr": "Albums",
+                "de": "Alben",
+                "es": "Álbumes"
+              }
+            },
+            {
+              "value": "ep",
+              "label": {
+                "en": "EPs",
+                "fr": "EP",
+                "de": "EPs",
+                "es": "EP"
+              }
+            },
+            {
+              "value": "single",
+              "label": {
+                "en": "Singles",
+                "fr": "Singles",
+                "de": "Singles",
+                "es": "Sencillos"
+              }
+            },
+            {
+              "value": "live",
+              "label": {
+                "en": "Live albums",
+                "fr": "Albums live",
+                "de": "Live-Alben",
+                "es": "Álbumes en directo"
+              }
+            },
+            {
+              "value": "compilation",
+              "label": {
+                "en": "Compilations",
+                "fr": "Compilations",
+                "de": "Compilations",
+                "es": "Recopilatorios"
+              }
+            },
+            {
+              "value": "other",
+              "label": {
+                "en": "Others (soundtracks, remixes, demos…)",
+                "fr": "Autres (bandes originales, remix, démos…)",
+                "de": "Sonstige (Soundtracks, Remixe, Demos …)",
+                "es": "Otros (bandas sonoras, remezclas, maquetas…)"
+              }
+            }
+          ]
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Artist",
+            "fr": "Artiste",
+            "de": "Künstler",
+            "es": "Artista"
+          },
+          "description": {
+            "en": "Its name on MusicBrainz (case does not matter). Empty: any followed artist.",
+            "fr": "Son nom sur MusicBrainz (sans tenir compte des majuscules). Vide : tout artiste suivi.",
+            "de": "Der Name auf MusicBrainz (Groß-/Kleinschreibung egal). Leer: jeder verfolgte Künstler.",
+            "es": "Su nombre en MusicBrainz (sin distinguir mayúsculas). Vacío: cualquier artista seguido."
+          },
+          "placeholder": {
+            "en": "Muse",
+            "fr": "Muse",
+            "de": "Muse",
+            "es": "Muse"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "key": "found",
+          "type": "boolean",
+          "label": {
+            "en": "A release was found",
+            "fr": "Une sortie a été trouvée",
+            "de": "Eine Veröffentlichung wurde gefunden",
+            "es": "Se encontró un lanzamiento"
+          }
+        },
+        {
+          "key": "full_title",
+          "type": "string",
+          "label": {
+            "en": "Artist and title",
+            "fr": "Artiste et titre",
+            "de": "Künstler und Titel",
+            "es": "Artista y título"
+          }
+        },
+        {
+          "key": "title",
+          "type": "string",
+          "label": {
+            "en": "Title",
+            "fr": "Titre",
+            "de": "Titel",
+            "es": "Título"
+          }
+        },
+        {
+          "key": "artist",
+          "type": "string",
+          "label": {
+            "en": "Followed artist",
+            "fr": "Artiste suivi",
+            "de": "Verfolgter Künstler",
+            "es": "Artista seguido"
+          }
+        },
+        {
+          "key": "credit",
+          "type": "string",
+          "label": {
+            "en": "Credit",
+            "fr": "Crédit",
+            "de": "Credit",
+            "es": "Crédito"
+          }
+        },
+        {
+          "key": "kind",
+          "type": "string",
+          "label": {
+            "en": "Kind (key)",
+            "fr": "Type (clé)",
+            "de": "Art (Schlüssel)",
+            "es": "Tipo (clave)"
+          },
+          "description": {
+            "en": "album, ep, single, live, compilation, other",
+            "fr": "album, ep, single, live, compilation, other",
+            "de": "album, ep, single, live, compilation, other",
+            "es": "album, ep, single, live, compilation, other"
+          }
+        },
+        {
+          "key": "kind_name",
+          "type": "string",
+          "label": {
+            "en": "Kind",
+            "fr": "Type",
+            "de": "Art",
+            "es": "Tipo"
+          }
+        },
+        {
+          "key": "date",
+          "type": "string",
+          "label": {
+            "en": "Release date",
+            "fr": "Date de sortie",
+            "de": "Erscheinungsdatum",
+            "es": "Fecha de lanzamiento"
+          }
+        },
+        {
+          "key": "date_text",
+          "type": "string",
+          "label": {
+            "en": "Release date (text)",
+            "fr": "Date de sortie (texte)",
+            "de": "Erscheinungsdatum (Text)",
+            "es": "Fecha de lanzamiento (texto)"
+          }
+        },
+        {
+          "key": "days",
+          "type": "number",
+          "label": {
+            "en": "Days since the release",
+            "fr": "Jours depuis la sortie",
+            "de": "Tage seit der Veröffentlichung",
+            "es": "Días desde el lanzamiento"
+          },
+          "description": {
+            "en": "-1 when the day is not announced or nothing was found.",
+            "fr": "-1 quand le jour n’est pas annoncé ou que rien n’a été trouvé.",
+            "de": "-1, wenn der Tag nicht bekannt ist oder nichts gefunden wurde.",
+            "es": "-1 cuando el día no está anunciado o no se encontró nada."
+          }
+        },
+        {
+          "key": "url",
+          "type": "string",
+          "label": {
+            "en": "MusicBrainz page",
+            "fr": "Page MusicBrainz",
+            "de": "MusicBrainz-Seite",
+            "es": "Página de MusicBrainz"
+          }
+        },
+        {
+          "key": "cover_url",
+          "type": "string",
+          "label": {
+            "en": "Cover address",
+            "fr": "Adresse de la pochette",
+            "de": "Cover-Adresse",
+            "es": "Dirección de la portada"
+          }
+        },
+        {
+          "key": "text",
+          "type": "string",
+          "label": {
+            "en": "Ready sentence",
+            "fr": "Phrase toute faite",
+            "de": "Fertiger Satz",
+            "es": "Frase hecha"
+          }
+        }
+      ]
+    }
+  ]
+}

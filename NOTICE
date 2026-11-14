@@ -1,0 +1,24 @@
+Gladys MusicBrainz integration
+Copyright 2026 William Deren
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The releases (artists, titles, kinds, dates) come from MusicBrainz
+(https://musicbrainz.org), the open music encyclopedia of the MetaBrainz
+Foundation, through its public API (version 2). Its core data is in the
+public domain (CC0). The covers shown in the widgets are downloaded from the
+Cover Art Archive (https://coverartarchive.org), a project of MusicBrainz and
+the Internet Archive, when a dashboard shows them: they belong to their
+owners and none is part of this repository (the covers of the widget
+illustrations are drawn by docs/illustrations/gen.mjs).
+
+Optional sources of artists: the public listening statistics of ListenBrainz
+(https://listenbrainz.org, MetaBrainz Foundation) and the top artists of a
+Last.fm profile (https://www.last.fm/api), read with the API key of the user.
+
+The files under test/fixtures are reduced copies of answers of these APIs,
+kept only to test their reading.
+
+MusicBrainz, ListenBrainz and the Cover Art Archive are projects of the
+MetaBrainz Foundation; Last.fm is a trademark of Last.fm Ltd. This community
+integration is not affiliated with, endorsed or sponsored by any of them.

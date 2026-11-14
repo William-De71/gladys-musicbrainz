@@ -1,0 +1,39 @@
+{
+  "payload": {
+    "artists": [
+      {
+        "artist_mbid": "8229a8f1-b315-4fae-af57-b3eb71efdaf4",
+        "artist_name": "Carbon Based Lifeforms",
+        "listen_count": 1569
+      },
+      {
+        "artist_mbid": "1c70a3fc-fa3c-4be1-8b55-c3192db8a884",
+        "artist_name": "R\u00f6yksopp",
+        "listen_count": 859
+      },
+      {
+        "artist_mbid": "aa1d4315-5246-42b2-b62b-f997d046d8b2",
+        "artist_name": "Emancipator",
+        "listen_count": 721
+      },
+      {
+        "artist_mbid": "3c2e2afb-b7e4-4b0f-8a0c-080808c935d3",
+        "artist_name": "Cell",
+        "listen_count": 564
+      },
+      {
+        "artist_mbid": "1cfa6ee5-1189-4ade-97db-8f20a6ba5c76",
+        "artist_name": "R\u00dcF\u00dcS DU SOL",
+        "listen_count": 461
+      }
+    ],
+    "count": 5,
+    "from_ts": 1735689600,
+    "last_updated": 1790144690,
+    "offset": 0,
+    "range": "year",
+    "to_ts": 1767225600,
+    "total_artist_count": 1439,
+    "user_id": "rob"
+  }
+}
